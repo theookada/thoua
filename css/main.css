@@ -66,7 +66,6 @@ font-family: 'Mukta', sans-serif;
 nav{
   z-index: 1;
   background: #000000;
-  overflow-x: hidden;
   font-size: 20px;
 }
 
