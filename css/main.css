@@ -2,6 +2,7 @@
 body{
   height: 100vh;
   width: 100vw;
+  font-family: 'Mukta', sans-serif;
 }
 /**** FONTS
 font-family: 'Mukta', sans-serif;
@@ -9,8 +10,9 @@ font-family: 'Mukta', sans-serif;
 
 /***** GRID *****/
 .grid{
+  height: 90%;
   width:90%;
-  height:90%;
+  margin: 0 auto;
   display: grid;
   grid-template-areas:  "sidenav banner banner"
                         "sidenav main aside"
@@ -25,18 +27,16 @@ font-family: 'Mukta', sans-serif;
 }
 
 /**** SIDENAV ****/
-.sidenav{
-  background: #000000;
-  grid-area: sidenav;
-  height: 100vh;
-  min-width: 200px;
-}
-
-
 nav{
+  height: 100%;
   font-size: 1.2rem;
   min-width: 200px;
   font-family: 'Mukta', sans-serif;
+}
+
+.sidenav{
+  background: #000000;
+  grid-area: sidenav;
 }
 
 nav img{
