@@ -1,6 +1,7 @@
 /***** BASE STYLES *****/
 body{
   font-family: 'Mukta', sans-serif;
+  margin: 0px;
 }
 /**** FONTS
 font-family: 'Mukta', sans-serif;
@@ -10,6 +11,7 @@ font-family: 'Mukta', sans-serif;
 .grid{
   height: 100vh;
   width: 100%;
+  min-width: 1200px;
   display: grid;
   grid-template-areas:  "sidenav banner banner"
                         "sidenav main aside"
@@ -24,32 +26,37 @@ font-family: 'Mukta', sans-serif;
 
 /**** SIDENAV ****/
 nav{
-  height: 100%;
+  min-height: 102.5%;
   font-size: 1.2rem;
   min-width: 200px;
-  font-family: 'Mukta', sans-serif;
 }
 
 .sidenav{
   background: #000000;
   grid-area: sidenav;
+  margin: auto;
 }
 
 nav img{
-  padding: 20px 0;
+  padding: 50px 0;
   display: block;
 }
 
+#logo{
+  width: 100%;
+  height: auto;
+}
+
 .sidenav a{
-  padding-left: 40px;
   text-decoration: none;
   color: #ffffff;
+  padding-left:30px;
 }
 
 .sidenav ul {
   list-style: none;
   text-transform: capitalize;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .sidenav ul li a:hover,
