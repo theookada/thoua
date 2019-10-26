@@ -6,58 +6,120 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <!-- Font -->
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-      <div class="grid">
 
-        <nav class="cell sidenav">
+      <header>
+        <div class="header-wrapper">
+          <div class="header-content">
 
-          <img id="logo" src="img/thoualogov3.png"/>
+          <section class="logo">
+            <img /><p>  logo here </p> <!-- LOGO -->
+          </section>
 
-            <a href="news"><span>News</span></a><br />
+          <nav> <!-- TOP Navigation -->
+            <a href="index.html"><span>News</span></a><br />
             <a>Ruleset</a>
             <ul>
-              <li><a href="#test">Characters</a></li>
-              <li><a href="#test">Die Rolls</a></li>
-              <li><a href="#test">Combat</a></li>
-              <li><a href="#test">Artifacts</a></li>
-              <li><a href="#test">Abilities</a></li>
+              <li><a href="ruleset/character/index.html">Characters</a></li>
+              <li><a href="ruleset/die-roll/index.html">Die Rolls</a></li>
+              <li><a href="ruleset/combat/index.html">Combat</a></li>
+              <li><a href="ruleset/artifact/index.html">Artifacts</a></li>
+              <li><a href="ruleset/abilities/index.html">Abilities</a></li>
             </ul>
             <a>Ability Library</a>
             <ul>
-              <li><a href="#earth">Earth</a></li>
-              <li><a href="#fire">Fire</a></li>
-              <li><a href="#water">Water</a></li>
-              <li><a href="#wind">Wind</a></li>
+              <li><a href="ability-library/earth-abil/index.html">Earth</a></li>
+              <li><a href="ability-library/fire-abil/index.html">Fire</a></li>
+              <li><a href="ability-library/water-abil/index.html">Water</a></li>
+              <li><a href="ability-library/wind-abil/index.html">Wind</a></li>
             </ul>
-            <a href="about"><span>About</span></a>
+            <a href="about/index.html"><span>About</span></a>
+          </nav> <!-- END TOP Navigation -->
+          </div> <!-- END header-content -->
+        </div> <!-- END header-wrapper -->
+      </header> <!-- END HEADER -->
 
-        </nav>
-        </aside>
+        <main>
+          <div class="main-wrapper">
+            <section class="main-content">
 
-        <header class="cell banner">Banner
+              <div class="card">
+                <h3>MAIN 1</h3>
+                <h4>YYYY-MM-DD</h4>
+                <div class="card-img">
+                  <img src="#" alt="blog content image">
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices sagittis orci a scelerisque purus.
+                </p>
+              </div>
 
-        </header>
+              <div class="card">
+                <h3>MAIN 2</h3>
+                <h4>YYYY-MM-DD</h4>
+                <div class="card-img">
+                  <img src="#" alt="blog content image">
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices sagittis orci a scelerisque purus.
+                </p>
+              </div>
 
-        <main class="cell main">
-          <div class="cell-4 cell">Main 1</div>
-          <div class="cell-5 cell">Main 2</div>
-          <div class="cell-6 cell">Main 3</div>
-        </main>
+              <div class="card">
+                <h3>MAIN 3</h3>
+                <h4>YYYY-MM-DD</h4>
+                <div class="card-img">
+                  <img src="#" alt="blog content image">
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices sagittis orci a scelerisque purus.
+                </p>
+              </div>
 
-        <aside class="cell aside">
-          <div class="cell-8 cell">Patch 1</div>
-          <div class="cell-9 cell">Patch 2</div>
-          <div class="cell-10 cell">Patch 3</div>
-        </aside>
+            </section> <!--END main-content-->
+          </div> <!--END main-wrapper-->
+        </main> <!-- END MAIN -->
 
-      </div><!-- END GRID -->
+        <aside>
+          <div class="aside-wrapper">
+            <section class="aside-content">
+
+              <div class="card">
+                <h3>ASIDE 1</h3>
+                <h4>YYYY-MM-DD</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices sagittis orci a scelerisque purus.
+                </p>
+              </div>
+
+              <div class="card">
+                <h3>ASIDE 2</h3>
+                <h4>YYYY-MM-DD</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices sagittis orci a scelerisque purus.
+                </p>
+              </div>
+
+              <div class="card">
+                <h3>ASIDE 3</h3>
+                <h4>YYYY-MM-DD</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices sagittis orci a scelerisque purus.
+                </p>
+              </div>
+
+            </section> <!-- END aside-content -->
+          </div> <!-- END aside-wrapper -->
+        </aside> <!-- END ASIDE -->
 
     </body>
 </html>

@@ -95,99 +95,74 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
-   /***** BASE STYLES *****/
-   body{
-     font-family: 'Mukta', sans-serif;
-   }
-   /**** FONTS
+/***** BASE STYLES *****/
+html {
+  font-size: 16px;
+}
+
+/**** FONTS
    font-family: 'Mukta', sans-serif;
-    ****
+   font-family: 'Crimson Text', serif;
+    ****/
 
-   /***** GRID *****/
-   .grid{
-     height: 100vh;
-     width: 100%;
-     display: grid;
-     grid-template-areas:  "sidenav banner banner"
-                           "sidenav main aside"
-                           "sidenav main aside";
-     grid-template-columns: 1fr 4fr 2fr;
-     grid-template-rows: 1fr 4fr 4fr;
-   }
+h1 {
+  font-size: 3em;
+  font-family: 'Mukta', sans-serif;
+}
 
-   .cell{
-     color:#fff;
-   }
+h2 {
+  font-size: 2em;
+  font-family: 'Mukta', sans-serif;
+}
 
-   /**** SIDENAV ****/
-   nav{
-     height: 100%;
-     font-size: 1.2rem;
-     min-width: 200px;
-     font-family: 'Mukta', sans-serif;
-   }
+h3 {
+  font-size: 1.25em;
+  font-family: 'Crimson Text', serif;
+  line-height: 1em;
+}
 
-   .sidenav{
-     background: #000000;
-     grid-area: sidenav;
-   }
+h4 {
+  font-size: 0.8em;
+  font-family: 'Crimson Text', serif;
+  line-height: 0.6em;
+}
 
-   nav img{
-     padding: 20px 0;
-     display: block;
-   }
+p {
+  font-size: 1em;
+  font-family: 'Crimson Text', serif;
+}
 
-   .sidenav a{
-     padding-left: 40px;
-     text-decoration: none;
-     color: #ffffff;
-   }
+a {
+  font-family: 'Mukta', sans-serif;
+}
 
-   .sidenav ul {
-     list-style: none;
-     text-transform: capitalize;
-     line-height: 30px;
-   }
+nav ul li {
+  font-family: 'Mukta', sans-serif;
+}
 
-   .sidenav ul li a:hover,
-   .sidenav a span:hover{
-     color:#ffcc00;
-   }
+ul,
+ol {
+  list-style-type: none;
+}
 
-   /**** BANNER ****/
-   .banner{
-     background: teal;
-     grid-area: banner;
-   }
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 
-   /*** MAIN CONTENT ***/
-   .main{
-     background: blue;
-     grid-area: main;
-     display: grid;
-     grid-row-gap: 20px;
-     height:100%;
-     padding:10px;
-   }
-   .main .cell{
-     background: coral;
-   }
+/* ==========================================================================
+HEADER STYLES
+========================================================================== */
 
-   /***ASIDE CONTENT ***/
-   .aside{
-     background:purple;
-     grid-area:aside;
-     display: grid;
-     grid-row-gap:10px;
-     height:100%;
-     padding:10px;
-   }
-   .aside .cell{
-     background: red;
-   }
+header {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #8ce3c6;
+}
+
 
 /* ==========================================================================
    Helper classes
