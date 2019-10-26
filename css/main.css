@@ -95,16 +95,74 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
-   /***** BASE STYLES *****/
-   body{
-     font-family: 'Mukta', sans-serif;
-   }
-   /**** FONTS
+/***** BASE STYLES *****/
+html {
+  font-size: 16px;
+}
+
+/**** FONTS
    font-family: 'Mukta', sans-serif;
-    ****
+   font-family: 'Crimson Text', serif;
+    ****/
+
+h1 {
+  font-size: 3em;
+  font-family: 'Mukta', sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'Mukta', sans-serif;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-family: 'Crimson Text', serif;
+  line-height: 1em;
+}
+
+h4 {
+  font-size: 0.8em;
+  font-family: 'Crimson Text', serif;
+  line-height: 0.6em;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'Crimson Text', serif;
+}
+
+a {
+  font-family: 'Mukta', sans-serif;
+}
+
+nav ul li {
+  font-family: 'Mukta', sans-serif;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* ==========================================================================
+HEADER STYLES
+========================================================================== */
+
+header {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #8ce3c6;
+}
+
 
 /* ==========================================================================
    Helper classes
