@@ -160,9 +160,42 @@ HEADER STYLES
 header {
   width: 100%;
   padding: 15px 0;
-  background-color: #8ce3c6;
+  background-color: #fedddd;
+  max-height: 200px;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav ul {
+  padding: 0 2em;
+}
+
+/* ==========================================================================
+MAIN STYLES
+========================================================================== */
+
+main .card {
+  background-color: #807ef2;
+}
+
+/* ==========================================================================
+ASIDE STYLES
+========================================================================== */
+
+aside .card {
+  background-color: #7ef298;
+}
 
 /* ==========================================================================
    Helper classes
