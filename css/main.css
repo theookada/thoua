@@ -158,11 +158,113 @@ HEADER STYLES
 ========================================================================== */
 
 header {
-  width: 100%;
-  padding: 15px 0;
-  background-color: #8ce3c6;
+  padding: 15px 15px;
+  background-color: #000;
+  max-height: 200px;
 }
 
+header .header-wrapper {
+  width: 100%;
+}
+
+header .header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .logo img {
+  width: 25%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  /**height: auto;
+  max-height: 50px;
+  max-width: 500px;
+  margin-left: 10px;**/
+}
+
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+header nav ul {
+  width: 100%;
+  overflow: hidden;
+  display:flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+header nav li {
+  float: left;
+}
+
+header nav li a, .dropbtn {
+  display: flex;
+  color: #fff;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+header li a:hover, .dropdown:hover .dropbtn {
+  background:#ffd77d;
+  color: #000;
+}
+
+header li .dropdown{
+  display:flex;
+}
+
+header .dropdown-content {
+  display: none;
+  position:absolute;
+  background: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+header .dropdown-content a {
+  color: #000;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+header .dropdown-content a:hover {
+  background: #ffd77d;
+}
+
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ==========================================================================
+MAIN STYLES
+========================================================================== */
+
+main .card {
+  background-color: #807ef2;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* ==========================================================================
+ASIDE STYLES
+========================================================================== */
+
+aside .card {
+  background-color: #7ef298;
+}
 
 /* ==========================================================================
    Helper classes
