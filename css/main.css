@@ -119,7 +119,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.4em;
   font-family: 'Crimson Text', serif;
   line-height: 1em;
 }
@@ -131,7 +131,7 @@ h4 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'Crimson Text', serif;
 }
 
@@ -147,6 +147,30 @@ ul,
 ol {
   list-style-type: none;
 }
+
+
+/***** TABLE STYLES *****/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.2em;
+  font-family: 'Crimson Text', serif;
+  border: 0.1em solid #3b3b3b;
+}
+
+tr {
+  text-align: left;
+  padding: 0.5em;
+}
+
+tr:nth-child(odd){background: #f2f2f2;}
+
+th {
+  background: #d0d0d0;
+  padding: 0.8em 0.4em;
+}
+
+td {padding: 0.2em 0.4em;}
 
 /* ==========================================================================
 HEADER STYLES
@@ -164,7 +188,7 @@ header .header-wrapper {
 
 header .header-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -173,14 +197,12 @@ header .logo img {
   display:flex;
   justify-content: center;
   align-items: center;
-  /**height: auto;
-  max-height: 50px;
-  max-width: 500px;
-  margin-left: 10px;**/
+  min-height: 50px;
+  min-width:250px;
 }
 
 header nav {
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -241,7 +263,7 @@ header .dropdown:hover .dropdown-content {
 }
 
 /* ==========================================================================
-MAIN STYLES
+NEWS Page STYLES
 ========================================================================== */
 
 main {
@@ -262,7 +284,7 @@ main {
 
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: 0;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -288,14 +310,34 @@ main {
   max-height: 100%;
 }
 
-/* ==========================================================================
-ASIDE STYLES
-========================================================================== */
+/* == ASIDE STYLES == */
 
 .aside-content .card {
   background-color: #7ef298;
   width: 30%;
   margin: 15px 0;
+}
+
+/* ==========================================================================
+Ruleset Pages STYLES
+========================================================================== */
+
+#race-lore article {
+}
+
+#race-lore .race-lore-content {
+}
+
+/* ==========================================================================
+ABOUT Page STYLES
+========================================================================== */
+
+#about-content {
+  padding: 1em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 /* ==========================================================================
