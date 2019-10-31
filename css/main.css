@@ -148,11 +148,6 @@ ol {
   list-style-type: none;
 }
 
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
-
 /* ==========================================================================
 HEADER STYLES
 ========================================================================== */
@@ -174,7 +169,7 @@ header .header-content {
 }
 
 header .logo img {
-  width: 25%;
+  width: 30%;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +180,7 @@ header .logo img {
 }
 
 header nav {
-  width: 40%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -249,21 +244,58 @@ header .dropdown:hover .dropdown-content {
 MAIN STYLES
 ========================================================================== */
 
-main .card {
-  background-color: #807ef2;
+main {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-main img {
-  width: 150px;
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.main-content .card {
+  background-color: #807ef2;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  flex-basis: 400px;
+  margin: 15px 0;
+}
+
+.main-content .card h3,
+.main-content .card h4 {
+  width: 100%;
+  display: flex;
+}
+
+.main-content .card-img img {
+  width: 100%;
   height: auto;
+  max-height: 100%;
 }
 
 /* ==========================================================================
 ASIDE STYLES
 ========================================================================== */
 
-aside .card {
+.aside-content .card {
   background-color: #7ef298;
+  width: 30%;
+  margin: 15px 0;
 }
 
 /* ==========================================================================
@@ -355,7 +387,17 @@ aside .card {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+/* ==========================================================================
+      TABLET STYLES - 768px
+      ========================================================================== */
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+/* ==========================================================================
+      DESKTOP STYLES - 1200px
+      ========================================================================== */
+@media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
 }
 
