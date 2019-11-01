@@ -280,6 +280,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
 }
 
 .main-content {
