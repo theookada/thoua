@@ -62,29 +62,130 @@
           <div class="main-wrapper">
             <section class="main-content">
 
-              <div class="chr-create">
+              <div id="cmbt-top">
                 <h2>Combat</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+                <p>Combat tests the Players wits and coordination to overcome various types of Enemies.  Characters and Enemies first determine their starting positions and Initiative order.  Then from highest to lowest in Initiative, Characters and Enemies take their Turn using their Actions and Abilities.  This continues until all Enemies are defeated, all Characters are defeated, or Character decide to retreat.</p>
               </div>
 
-              <div class="chr-stat">
-                <h2>Character Stats</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+              <div id="cmbt-setup">
+                <h2>Setting Up</h2>
+                <p>Before Combat begins, the initial starting positions and Initiative order is determined.</p>
+
+                <h3>Starting Positions</h3>
+                <p>Starting positions just refer to where the Characters and Enemies are located at the beginning of Combat.  There is a bit of abstraction here as the Characters may or may not know where all the Enemies are initially.  Often times Combat can begin suddenly without prior notice of all the Character and Enemy positions being known.  In these cases, use the best judgement of the Players and GM to determine their own starting positions.</p>
+
+                <h3>Initiative</h3>
+                <p>Initiative creates an order that structures when Characters and Enemies takes their respective Turns.  Initiative can change throughout the course of Combat.</p>
               </div>
 
-              <div class="chr-att">
-                <h2>Attributes</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+              <div id="cmbt-turn">
+                <h2>Turn</h2>
+                <p>A Turn is when an Character or Enemy takes their Actions.  The Turn consists of Three Phases in the following order: Start, Action, and End.</p>
+
+                <h3>Start Phase</h3>
+                <p>During the Start Phase, the Character follows this order of events:</p>
+                <ol>
+                  <li><b>1. Restore AP:</b> The Character restores their AP.</li>
+                  <li><b>2. Start of Turn Effects:</b> Apply Ability Effects that trigger.</li>
+                </ol>
+
+                <h3>Action Phase</h3>
+                <p>During the Action Phase, the Character may use Actions by spending AP.  Actions can be used in any order.  However the Player must complete their current Action before beginning another.  Once the Character has spent all of their available AP, the Character immediately moves into the End Phase.  The Character may take the following Actions:</p>
+                <ul>
+                  <li><b>Movement Action:</b> The Character spends 1 AP to move a number of Spaces up to their Movement.</li>
+                  <li><b>Ability Action:</b> The Character spends the amount of AP listed within the Ability Entry to use an Ability.</li>
+                  <li><b>Pass:</b> The Character moves immediately to the End Phase.</li>
+                </ul>
+
+                <h3>End Phase</h3>
+                <p>During the End Phase, the Character follows this order of events:</p>
+                <ol>
+                  <li><b>1. End of Turn Effects:</b> Apply Ability Effects that trigger at the End of Turn.</li>
+                  <li><b>2. Lower Modifier Turn Counts:</b> Reduce the Duration of Bonuses, Penalties, and Conditions by 1 Turn.  If the Duration goes to 0 Turns or below, remove the Ability, Bonus, Penalty or Condition from the Character.</li>
+                </ol>
               </div>
 
-              <div class="chr-race">
-                <h2>Races</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+              <div id="cmbt-move">
+                <h2>Movement Action</h2>
+                <p>Movement Actions are how Characters move around in Combat.  The Character spends 1 AP and may move a number of spaces up to their Movement.  During the Movement Action, the Character may move through Allies, but may not move through Enemies or Obstacles.  The Character must end their Movement in an empty space within their Movement range.</p>
               </div>
 
-              <div class="chr-prog">
-                <h2>Character Progression</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+              <div id="cmbt-abl">
+                <h2>Ability Action</h2>
+                <p>Ability Actions are unique in that a variety of effects can be executed based on the Ability used.  However, Abilities do fall under similar categories and are generally resolved the same way.</p>
+
+                <h3>Damage Ability</h3>
+                <p>Lists an Element Damage and the Ability Die in their Effect entry.  To resolve, the Attacker Roll and Defender Roll are determined.  Then the Defender Roll is subtracted from the Attacker Roll.  If the Attacker Roll is above 0, the amount is then subtracted from the Defender’s HP.</p>
+
+                <h3>Control Ability</h3>
+                <p>Lists the Ability Die followed by “if successful” in their Effect entry.  To resolve, the Attacker Roll and Defender Roll are determined.  Then the Defender Roll is subtracted from the Attack Roll.  If the Attacker Roll is above 0, the Ability is successful and applies the effect on the Defender.</p>
+
+                <h3>Support Ability</h3>
+                <p>The Ability entry will not specify a Die Roll, as such falls under the rules of <a>Unopposed Rolls</a>.  The Effect is resolved as stated in the Ability entry.</p>
+
+                <h3>Passive Ability</h3>
+                <p>These Abilities do not require an Action to activate, hence “Passive”.  Often, Passives grant the Character permanent Stat increases and do not overwrite Bonuses</p>
+              </div>
+
+              <div id="cmbt-mod">
+                <h2>Combat Modifiers</h2>
+                <p>Combat Modifiers are any Ability Effects that can help or hinder the Character during the course of Combat.  Combat Modifiers include Bonuses, Penalties and Conditions.</p>
+
+                <h3>Bonus</h3>
+                <p>Bonus Modifier (or Bonus) refers to a modifier that raises the Character’s Die Roll.  In Ability entries they will list the Stat being raised and the flat number or die being added to that stat.  Flat number bonuses appear as “+#” while die bonuses appear as “+#d#”.  <em>A Character can have both a flat number and die Bonus to the same stat.</em></p>
+
+                <h3>Penalty</h3>
+                <p>A Penalty refers to a modifier that lowers a Character Stat for a few Turns in Combat.  In Ability entries they will list the Stat being lowered and the flat number or die being subtracted to that stat.  Flat number bonuses appear as “-#” while die bonuses appear as “-#d#”.  <em>A Character can have both a flat number and die Penalty to the same stat.</em></p>
+
+                <h3>Condition</h3>
+                <p>A Condition is a modifier that produces a unique Effect over a few Turns in Combat.  In Ability entries they will be listed as “Condition” and the Effect that is created.  Conditions are unique Effects and the Character may have multiple Conditions affecting them at the same time.</p>
+
+                <p><em>Condition Damage:</em> Condition Damage is a type of <a href="../die-roll/index.html">Unopposed Roll</a>.  The Character rolls the die or dice listed within the Condition entry without adding attribute, bonuses or penalties.  The total damage (or Condition Damage) is then subtracted from the Enemy’s HP.</p>
+
+                <h3>Turn Countdown</h3>
+                <p>Modifiers all have durations listed as “# Turns”, which are lowered by -1 Turn at the End of the Character’s Turn.  The Player may not choose lower their Turn counts before the Effect is applied, such as to avoid Condition Damage.</p>
+
+                <h3>Duplicate Modifiers</h3>
+                <p>In some instances different Ability Effects apply the same type of Modifier.  In general, if the Character has the Modifier and a new Modifier of the same name and/or type is trying to be applied.  The Character is unaffected by the new Modifier, even if the value is higher or the duration is longer.</p>
+
+                <h3>Order of Effects</h3>
+                <p>In cases where multiple Effects are triggered at the same time on the Character.  The Character chooses the order in which the Effects are resolved in.</p>
+              </div>
+
+              <div id="cmbt-los">
+                <h2>Line of Sight</h2>
+                <p>Line of Sight (or LoS) refers to the Character having a clear targeting path to their intended Target.  To determine if the Character has LoS to their intended target, draw a line from a corner of the Character’s Space to the Target’s Space.  If the line does not cross through an Enemy or Obstacle Space, the Character has LoS to the Target.  Ally Spaces never block LoS for the Character.</p>
+              </div>
+
+              <div id="cmbt-aoe">
+                <h2>Area of Effect</h2>
+                <p>Area of Effect (or AoE) refers to when an Ability targets multiple spaces.  AoEs differ based on the type of AoE, number of Spaces targeted, and range.  In cases where the AoE requires an Opposed Roll, only one Attacker Roll is required to be rolled against all Targets of the AoE.  However the Defender Rolls and resulting Ability Effects is determined individually.</p>
+
+                <ul>
+                  <li><b>Area:</b> fssdfd</li>
+                  <li><b>Aura:</b> fssdfd</li>
+                  <li><b>Burst:</b> fssdfd</li>
+                  <li><b>Cone:</b> fssdfd</li>
+                  <li><b>Line:</b> fssdfd</li>
+                  <li><b>Splash:</b> fssdfd</li>
+                </ul>
+              </div>
+
+              <div id="cmbt-obst">
+                <h2>Obstacles</h2>
+
+                <h3></h3>
+              </div>
+
+              <div id="cmbt-vd">
+                <h2>Victory or Defeat</h2>
+                <p>Victory or Defeat is determined either by the Player Party defeating all Enemies, the Player Party being defeated, or the Player Party retreating from Combat.  Depending on the situation Victory or Defeat can sometimes not be clearly defined.</p>
+
+                <p>Within Combat, when a Character or Enemy falls to 0 HP, they are considered Defeated for the Combat and are unable to participate for the remaining Combat.  Defeated Characters are able to join in the next Combat.</p>
+              </div>
+
+              <div id="cmbt-exp">
+
               </div>
 
             </section> <!--END main-content-->
