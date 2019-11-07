@@ -101,7 +101,7 @@
                 <p>During the End Phase, the Character follows this order of events:</p>
                 <ol>
                   <li><b>1. End of Turn Effects:</b> Apply Ability Effects that trigger at the End of Turn.</li>
-                  <li><b>2. Lower Modifier Turn Counts:</b> Reduce the Duration of Bonuses, Penalties, and Conditions by 1 Turn.  If the Duration goes to 0 Turns or below, remove the Ability, Bonus, Penalty or Condition from the Character.</li>
+                  <li><b>2. Lower Turn Counts:</b> Lower the number of Turns of Combat Modifiers and Ability Cooldowns by -1 Turn.  Combat Modifiers that fall to 0 Turns are removed from the Character.  Ability Cooldowns that fall to 0 Turns become usable.</li>
                 </ol>
               </div>
 
@@ -121,7 +121,7 @@
                 <p>Lists the Ability Die followed by “if successful” in their Effect entry.  To resolve, the Attacker Roll and Defender Roll are determined.  Then the Defender Roll is subtracted from the Attack Roll.  If the Attacker Roll is above 0, the Ability is successful and applies the effect on the Defender.</p>
 
                 <h3>Support Ability</h3>
-                <p>The Ability entry will not specify a Die Roll, as such falls under the rules of <a>Unopposed Rolls</a>.  The Effect is resolved as stated in the Ability entry.</p>
+                <p>The Ability entry will not specify a Die Roll, as such falls under the rules of <a href="../die-roll/index.html">Unopposed Rolls</a>.  The Effect is resolved as stated in the Ability entry.</p>
 
                 <h3>Passive Ability</h3>
                 <p>These Abilities do not require an Action to activate, hence “Passive”.  Often, Passives grant the Character permanent Stat increases and do not overwrite Bonuses</p>
@@ -165,7 +165,7 @@
                   <img src="../../img/aoe-area.png" alt="Area Type Area of Effect">
                 </div>
                 <h3>Area</h3>
-                <p>Area AoEs target a small grid of spaces denoted by the entry.  One Space within Area must be within the Range listed in the Ability entry.  The Character only needs LoS to the desired Space.</p>
+                <p>Area AoEs target a small grid of spaces denoted by the entry.  One Space within Area must be within the indiciated Range.  The Character only needs LoS to the desired Space.</p>
 
                 <div class="content-img">
                   <img src="../../img/aoe-aura.png" alt="Area Type Area of Effect">
@@ -183,13 +183,13 @@
                   <img src="../../img/aoe-line.png" alt="Area Type Area of Effect">
                 </div>
                 <h3>Line</h3>
-                <p>Line AoEs target a number of contiguous Spaces from the Character resulting in a single space straight row.  Lines ignore LoS.</p>
+                <p>Line AoEs target a number of contiguous Spaces away from the Character in a single space straight row up to the indicated Range.  Lines ignore LoS.</p>
 
                 <div class="content-img">
                   <img src="../../img/aoe-splash.png" alt="Area Type Area of Effect">
                 </div>
                 <h3>Splash</h3>
-                <p>Targets the primary Enemy and all Targets 1 Space away from that Enemy.  The Character only needs LoS to the primary Enemy.</p>
+                <p>Targets an Enemy a number of Spaces away up to the indicated Range.  The Enemy and all Targets 1 Space away from that Enemy.  The Character only needs LoS to the primary Enemy.</p>
               </div>
 
               <div id="cmbt-obst">
