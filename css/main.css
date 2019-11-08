@@ -280,7 +280,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
+  width: 95%;
 }
 
 .main-content {
@@ -327,6 +327,36 @@ Ruleset Pages STYLES
 }
 
 #race-lore .race-lore-content {
+}
+
+/* ==========================================================================
+Library Pages STYLES
+========================================================================== */
+main #lib {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.lib-content .lib-card ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.lib-card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.lib-card {
+  background: #ebebeb;
+  width: 700px;
+  margin: 10px;
+}
+
+#lib h2 {
+  text-align: center;
 }
 
 /* ==========================================================================
