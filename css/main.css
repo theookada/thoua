@@ -177,65 +177,83 @@ HEADER STYLES
 ========================================================================== */
 
 header {
-  padding: 15px 15px;
   background-color: #000;
-  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 10px 0;
+  margin:0;
 }
 
 header .header-wrapper {
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-header .header-content {
+header figure {
+  width: 70%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 header .logo img {
-  width: 30%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: auto;
   min-height: 50px;
   min-width:250px;
 }
 
 header nav {
-  width: 70%;
+  width: 60%;
+  font-size: 1.1em;
+  font-weight: 600;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 header nav ul {
   width: 100%;
-  overflow: hidden;
   display:flex;
   justify-content: space-around;
   padding: 0;
 }
 
-header nav li {
-  float: left;
+header nav ul li {
+  font-size: 1.1em;
 }
 
-header nav li a, .dropbtn {
+header nav li a,
+.dropbtn {
   display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: 000;
   color: #fff;
+  border: none;
   text-align: center;
   padding: 5px 20px;
   text-decoration: none;
+  font-weight: 600;
 }
 
-header li a:hover, .dropdown:hover .dropbtn {
+header li a:hover,
+button .dropbtn:hover .dropbtn:hover {
   background:#ffd77d;
   color: #000;
 }
 
 header li .dropdown{
-  display:flex;
+  position: relative;
+  display: inline-block;
 }
 
 header .dropdown-content {
@@ -285,7 +303,6 @@ main {
 
 .main-content {
   display: flex;
-  justify-content: 0;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -302,7 +319,6 @@ main {
 .main-content .card h3,
 .main-content .card h4 {
   width: 100%;
-  display: flex;
 }
 
 .main-content .card-img img {
@@ -313,10 +329,32 @@ main {
 
 /* == ASIDE STYLES == */
 
+.aside-wrapper {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 95%;
+}
+
+.aside-content {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .aside-content .card {
   background-color: #7ef298;
   width: 30%;
   margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  flex-basis: 400px;
+}
+
+.aside-content h3,
+.aside-content h4 {
+  width: 100%;
 }
 
 /* ==========================================================================
