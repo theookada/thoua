@@ -19,42 +19,36 @@
 
       <header>
         <div class="header-wrapper">
-          <div class="header-content">
 
-            <!-- LOGO -->
-            <section class="logo">
-              <a href="../../index.html"><img src="../../img/thoualogo.png"/></a>
-            </section>
+          <figure class="logo"><!-- LOGO -->
+            <a href="../../index.html"><img src="../../img/thoualogo.png"/></a>
+          </figure>
 
-            <!-- TOP Navigation -->
-            <nav>
-
-              <ul>
-                <li><a href="../../index.html">News</a></li>
+          <nav><!-- TOP Navigation -->
+            <ul>
+              <li class="dropdown">
+                <a class="dropbtn">Ruleset</a>
+                <div class="dropdown-content">
+                  <a href="../../ruleset/character/index.html">Characters</a>
+                  <a href="../../ruleset/die-roll/index.html">Die Rolls</a>
+                  <a href="../../ruleset/combat/index.html">Combat</a>
+                  <a href="../../ruleset/artifact/index.html">Artifacts</a>
+                  <a href="../../ruleset/abilities/index.html">Abilities</a>
+                </div>
+                </li>
                 <li class="dropdown">
-                  <a class="dropbtn">Ruleset</a>
+                  <a class="dropbtn">Elements</a>
                   <div class="dropdown-content">
-                    <a href="../../ruleset/character/index.html">Characters</a>
-                    <a href="../../ruleset/die-roll/index.html">Die Rolls</a>
-                    <a href="../../ruleset/combat/index.html">Combat</a>
-                    <a href="../../ruleset/artifact/index.html">Artifacts</a>
-                    <a href="../../ruleset/abilities/index.html">Abilities</a>
+                    <a href="../../element/earth-abil/index.html">Earth</a>
+                    <a href="../../element/fire-abil/index.html">Fire</a>
+                    <a href="../../element/water-abil/index.html">Water</a>
+                    <a href="../../element/wind-abil/index.html">Wind</a>
                   </div>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropbtn">Ability Library</a>
-                    <div class="dropdown-content">
-                      <a href="../../ability-library/earth-abil/index.html">Earth</a>
-                      <a href="../../ability-library/fire-abil/index.html">Fire</a>
-                      <a href="../../ability-library/water-abil/index.html">Water</a>
-                      <a href="../../ability-library/wind-abil/index.html">Wind</a>
-                    </div>
-                  </li>
-                  <li><a href="../../about/index.html">About</a></li>
-              </ul>
+                </li>
+                <li><a href="../../about/index.html">About</a></li>
+            </ul>
+          </nav> <!-- END TOP Navigation -->
 
-            </nav> <!-- END TOP Navigation -->
-          </div> <!-- END header-content -->
         </div> <!-- END header-wrapper -->
       </header> <!-- END HEADER -->
 
@@ -62,52 +56,52 @@
           <div class="lib-wrapper">
             <section class="lib-content">
                 <div class="lib-head">
-                  <img src="../../img/firesign.png"/>
-                  <h2>Fire Abilities</h2>
+                  <img src="../../img/watersign.png"/>
+                  <h2>Water Abilities</h2>
                 </div>
 
                 <section class="lib-rank1">
                   <h2>Rank 1</h2>
                 <div class="lib-card-wrapper">
                   <div class="lib-card">
-                    <h3>Cinder Thrust</h3>
+                    <h3>Dew Blade</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Damage</li>
                       <li><b>AP Cost:</b> 1</li>
                       <li><b>Cooldown:</b> 2</li>
                       <li><b>Die Roll:</b> Attack</li>
-                      <li><b>Target:</b> Line</li>
-                      <li><b>Range:</b> 2</li>
+                      <li><b>Target:</b> Enemy</li>
+                      <li><b>Range:</b> 1</li>
                     </ul>
-                    <p><b>Effect:</b> Targets in Line takes Fire Damage 1d6.</p>
-                    <p><b>Special:</b> Character STR 10 or more: Change Fire Damage to 1d8.</p>
+                    <p><b>Effect:</b> Enemy takes Water Damage 1d8.</p>
+                    <p><b>Special:</b> Character STR 10 or more: Add Self gains Initiative +5 for 3 Turns.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Burn</h3>
+                    <h3>Chill</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Control</li>
                       <li><b>AP Cost:</b> 1</li>
                       <li><b>Cooldown:</b> 2</li>
                       <li><b>Die Roll:</b> Status</li>
-                      <li><b>Target:</b> Enemy</li>
+                      <li><b>Target:</b> Target</li>
                       <li><b>Range:</b> 4</li>
                     </ul>
-                    <p><b>Effect:</b> 1d10, if successful: Burn Condition for 3 Turns. <br />
-                    <em>Burn Condition:</em> At the End of the Character's Turn, Target takes Damage 1d4.</p>
-                    <p><b>Special:</b> Character INT 10 or more: Change Burn Condition Damage to 1d6.</p>
+                    <p><b>Effect:</b> 1d12, if successful: Chill Condition for 3 Turns. <br />
+                    <em>Chill Condition:</em> Target gains Fire EM +5 and Water EM -5.</p>
+                    <p><b>Special:</b> Character INT 10 or more: Change Chill Condition to Fire EM +8 and Water EM -8.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Soothe</h3>
+                    <h3>Barrier</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Support</li>
@@ -115,16 +109,17 @@
                       <li><b>Cooldown:</b> 2</li>
                       <li><b>Die Roll:</b> -</li>
                       <li><b>Target:</b> Ally</li>
-                      <li><b>Range:</b> 4</li>
+                      <li><b>Range:</b> 5</li>
                     </ul>
-                    <p><b>Effect:</b> Ally Heals 1d8.</p>
-                    <p><b>Special:</b> Character VIT 10 or more: Change Heal to 1d10.</p>
+                    <p><b>Effect:</b> Barrier Condition for 3 Turns. <br /> <em>Barrier Condition:</em> Target gains Temporary HP 1d10 that is consumed before HP
+                    </p>
+                    <p><b>Special:</b> Character WIS 10 or more: Change Temporary HP to 1d12.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Courage</h3>
+                    <h3>Patience</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Passive</li>
@@ -134,7 +129,7 @@
                       <li><b>Target:</b> Self</li>
                       <li><b>Range:</b> -</li>
                     </ul>
-                    <p><b>Effect:</b> Self gains Attack Rolls +2.</p>
+                    <p><b>Effect:</b> Self gains Resistance Rolls +2.</p>
                     <p><b>Special:</b> Character Level 10: Add Self gains AP +1.</p>
                   </div>
                 </div>
@@ -145,60 +140,62 @@
                 <div class="lib-card-wrapper">
 
                   <div class="lib-card">
-                    <h3>Firebrand</h3>
+                    <h3>Corrosive Edge</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Damage</li>
                       <li><b>AP Cost:</b> 1</li>
                       <li><b>Cooldown:</b> 3</li>
                       <li><b>Die Roll:</b> Attack</li>
-                      <li><b>Target:</b> Burst, Enemy</li>
+                      <li><b>Target:</b> Enemy</li>
                       <li><b>Range:</b> 1</li>
                     </ul>
-                    <p><b>Effect:</b> Enemies in Burst take Fire Damage 2d6.</p>
-                    <p><b>Special:</b> Character HP below 50%: Add Fire Damage +1d6.</p>
+                    <p><b>Effect:</b> Enemy takes Water Damage 2d8.</p>
+                    <p><b>Special:</b> Character Water EM 15 or more: Add Enemy takes Attack Rolls -1d6 for 3 Turns.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Raze</h3>
+                    <h3>Coldsnap</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
-                      <li><b>Type:</b> Damage</li>
+                      <li><b>Type:</b> Control</li>
                       <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 3</li>
                       <li><b>Die Roll:</b> Status</li>
                       <li><b>Target:</b> Splash, Enemy</li>
                       <li><b>Range:</b> 4</li>
                     </ul>
-                    <p><b>Effect:</b> Enemy and Splash takes Fire Damage 2d8.</p>
-                    <p><b>Special:</b> Enemy has Burn Condition: Add Fire Damage +1d8.</p>
+                    <p><b>Effect:</b> 2d10, if successful: Enemy and Splash take Defense Rolls -1d6 for 3 Turns.</p>
+                    <p><b>Special:</b> Enemy has Chill Condition: Enemy and Splash take Damage 2d6.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Radiance</h3>
+                    <h3>Foreseen</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Support</li>
-                      <li><b>AP Cost:</b> 2</li>
+                      <li><b>AP Cost:</b> 1</li>
                       <li><b>Cooldown:</b> 3</li>
                       <li><b>Die Roll:</b> -</li>
-                      <li><b>Target:</b> Burst, Ally</li>
-                      <li><b>Range:</b> 2</li>
+                      <li><b>Target:</b> Ally</li>
+                      <li><b>Range:</b> 5</li>
                     </ul>
-                    <p><b>Effect:</b> Allies in Burst Heal 2d6.</p>
-                    <p><b>Special:</b> Character Fire EM 15 or more: Add Heal +1d6.</p>
+                    <p><b>Effect:</b> Ally gains Foreseen Condition for 1 Turn.<br />
+                    <em>Foreseen Condition:</em> During the Target's next Die Roll, roll twice and take the higher result and remove the Foreseen Condition.
+                    </p>
+                    <p><b>Special:</b> Ally has the Barrier Condition: Add Ally gains Initiative +10 for 1 Turn.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Ambition</h3>
+                    <h3>Cunning</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Passive</li>
@@ -208,8 +205,8 @@
                       <li><b>Target:</b> Self</li>
                       <li><b>Range:</b> -</li>
                     </ul>
-                    <p><b>Effect:</b> Self gains Fire EM +2 and HP +5.</p>
-                    <p><b>Special:</b> Character Fire EM 15 or more: Add Self gains Defense Rolls +2.</p>
+                    <p><b>Effect:</b> Self gains Water EM +2 and Initiative +5.</p>
+                    <p><b>Special:</b> Character Water EM 15 or more: Add Self gains Attack Rolls +2.</p>
                   </div>
                 </div>
                 </section>
@@ -218,43 +215,43 @@
                   <h2>Rank 3</h2>
                 <div class="lib-card-wrapper">
                   <div class="lib-card">
-                    <h3>To Ash</h3>
+                    <h3>Water Whip</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
                       <li><b>Type:</b> Damage</li>
                       <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 4</li>
                       <li><b>Die Roll:</b> Attack</li>
-                      <li><b>Target:</b> Enemy</li>
-                      <li><b>Range:</b> 2</li>
+                      <li><b>Target:</b> Burst, Enemy</li>
+                      <li><b>Range:</b> 3</li>
                     </ul>
-                    <p><b>Effect:</b> Enemy takes Fire Damage 3d8.</p>
-                    <p><b>Special:</b> Character Fire EM 20 or more: Add Fire Damage +2d8.</p>
+                    <p><b>Effect:</b> Enemies in Burst take Water Damage 3d6.</p>
+                    <p><b>Special:</b> Character Water EM 20 or more: Enemies in Burst take Status Rolls -1d8 for 3 Turns.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Inferno</h3>
+                    <h3>Permafrost</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
-                      <li><b>Type:</b> Damage</li>
+                      <li><b>Type:</b> Control</li>
                       <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 4</li>
                       <li><b>Die Roll:</b> Status</li>
                       <li><b>Target:</b> Area - 3x3</li>
                       <li><b>Range:</b> 3</li>
                     </ul>
-                    <p><b>Effect:</b> Targets in Area take Fire Damage 3d10.</p>
-                    <p><b>Special:</b> Enemy in Area has Burn Condition: Add Targets in Area take Defense Rolls -1d6 for 3 Turns.</p>
+                    <p><b>Effect:</b> 3d6, if successful: Targets in Area take Resistance Rolls -1d8 for 3 Turns.</p>
+                    <p><b>Special:</b> Enemy in Area has Chill Condition: Targets in Area takes Damage 2d10.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Vigor</h3>
+                    <h3>Fate's Hand</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
                       <li><b>Type:</b> Support</li>
@@ -262,16 +259,17 @@
                       <li><b>Cooldown:</b> 4</li>
                       <li><b>Die Roll:</b> -</li>
                       <li><b>Target:</b> Ally</li>
-                      <li><b>Range:</b> 4</li>
+                      <li><b>Range:</b> 5</li>
                     </ul>
-                    <p><b>Effect:</b> Ally Heals 3d12.</p>
-                    <p><b>Special:</b> Ally HP below 50%: Add Heal +2d12.</p>
+                    <p><b>Effect:</b> Ally gains Fate's Hand Condition for 3 Turns.<br />
+                    <em>Fate's Hand Condition:</em> When the Target would take Damage, the Target Heals 3d6 and remove Fate's Hand Condition.</p>
+                    <p><b>Special:</b> Ally has the Barrier Condition: Change the AP Cost to 1.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Fury</h3>
+                    <h3>Manipulative</h3>
                     <ul>
-                      <li><b>Element:</b> Fire</li>
+                      <li><b>Element:</b> Water</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
                       <li><b>Type:</b> Passive</li>
@@ -281,8 +279,8 @@
                       <li><b>Target:</b> Self</li>
                       <li><b>Range:</b> -</li>
                     </ul>
-                    <p><b>Effect:</b> Self gains Attack Rolls +1d4, Status Rolls +1d4, Defense Rolls -3 and Resistance Rolls -3.</p>
-                    <p><b>Special:</b> Character HP below 50%: Change Attack Rolls and Status Rolls to +1d8.  Change Defense Rolls and Resistance Rolls to -6.</p>
+                    <p><b>Effect:</b> Self gains Defense Rolls +1d6 and Resistance Rolls +1d6.</p>
+                    <p><b>Special:</b> Character Initiative is 25 or more: Add Self ignores Line of Sight when targeting Allies.</p>
                   </div>
                 </div>
                 </section>

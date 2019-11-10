@@ -19,42 +19,36 @@
 
       <header>
         <div class="header-wrapper">
-          <div class="header-content">
 
-            <!-- LOGO -->
-            <section class="logo">
-              <a href="../../index.html"><img src="../../img/thoualogo.png"/></a>
-            </section>
+          <figure class="logo"><!-- LOGO -->
+            <a href="../../index.html"><img src="../../img/thoualogo.png"/></a>
+          </figure>
 
-            <!-- TOP Navigation -->
-            <nav>
-
-              <ul>
-                <li><a href="../../index.html">News</a></li>
+          <nav><!-- TOP Navigation -->
+            <ul>
+              <li class="dropdown">
+                <a class="dropbtn">Ruleset</a>
+                <div class="dropdown-content">
+                  <a href="../../ruleset/character/index.html">Characters</a>
+                  <a href="../../ruleset/die-roll/index.html">Die Rolls</a>
+                  <a href="../../ruleset/combat/index.html">Combat</a>
+                  <a href="../../ruleset/artifact/index.html">Artifacts</a>
+                  <a href="../../ruleset/abilities/index.html">Abilities</a>
+                </div>
+                </li>
                 <li class="dropdown">
-                  <a class="dropbtn">Ruleset</a>
+                  <a class="dropbtn">Elements</a>
                   <div class="dropdown-content">
-                    <a href="../../ruleset/character/index.html">Characters</a>
-                    <a href="../../ruleset/die-roll/index.html">Die Rolls</a>
-                    <a href="../../ruleset/combat/index.html">Combat</a>
-                    <a href="../../ruleset/artifact/index.html">Artifacts</a>
-                    <a href="../../ruleset/abilities/index.html">Abilities</a>
+                    <a href="../../element/earth-abil/index.html">Earth</a>
+                    <a href="../../element/fire-abil/index.html">Fire</a>
+                    <a href="../../element/water-abil/index.html">Water</a>
+                    <a href="../../element/wind-abil/index.html">Wind</a>
                   </div>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropbtn">Ability Library</a>
-                    <div class="dropdown-content">
-                      <a href="../../ability-library/earth-abil/index.html">Earth</a>
-                      <a href="../../ability-library/fire-abil/index.html">Fire</a>
-                      <a href="../../ability-library/water-abil/index.html">Water</a>
-                      <a href="../../ability-library/wind-abil/index.html">Wind</a>
-                    </div>
-                  </li>
-                  <li><a href="../../about/index.html">About</a></li>
-              </ul>
+                </li>
+                <li><a href="../../about/index.html">About</a></li>
+            </ul>
+          </nav> <!-- END TOP Navigation -->
 
-            </nav> <!-- END TOP Navigation -->
-          </div> <!-- END header-content -->
         </div> <!-- END header-wrapper -->
       </header> <!-- END HEADER -->
 
@@ -62,17 +56,17 @@
           <div class="lib-wrapper">
             <section class="lib-content">
                 <div class="lib-head">
-                  <img src="../../img/watersign.png"/>
-                  <h2>Water Abilities</h2>
+                  <img src="../../img/windsign.png"/>
+                  <h2>Wind Abilities</h2>
                 </div>
 
                 <section class="lib-rank1">
                   <h2>Rank 1</h2>
                 <div class="lib-card-wrapper">
                   <div class="lib-card">
-                    <h3>Dew Blade</h3>
+                    <h3>Swift Stab</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Damage</li>
@@ -82,50 +76,49 @@
                       <li><b>Target:</b> Enemy</li>
                       <li><b>Range:</b> 1</li>
                     </ul>
-                    <p><b>Effect:</b> Enemy takes Water Damage 1d8.</p>
-                    <p><b>Special:</b> Character STR 10 or more: Add Self gains Initiative +5 for 3 Turns.</p>
+                    <p><b>Effect:</b> Enemy takes Wind Damage 1d8.</p>
+                    <p><b>Special:</b> Character STR 10 or more: Self gains Movement +1 for 3 Turns.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Chill</h3>
+                    <h3>Prey</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Control</li>
                       <li><b>AP Cost:</b> 1</li>
                       <li><b>Cooldown:</b> 2</li>
                       <li><b>Die Roll:</b> Status</li>
-                      <li><b>Target:</b> Target</li>
-                      <li><b>Range:</b> 4</li>
+                      <li><b>Target:</b> Enemy</li>
+                      <li><b>Range:</b> 5</li>
                     </ul>
-                    <p><b>Effect:</b> 1d12, if successful: Chill Condition for 3 Turns. <br />
-                    <em>Chill Condition:</em> Target gains Fire EM +5 and Water EM -5.</p>
-                    <p><b>Special:</b> Character INT 10 or more: Change Chill Condition to Fire EM +8 and Water EM -8.</p>
+                    <p><b>Effect:</b> 1d10, if successful: Prey Condition for 1 Turns. <br />
+                    <em>Prey Condition:</em> When Target move their current space, Target takes Damage 1d8 and removes Prey Condition.</p>
+                    <p><b>Special:</b> Character INT 10 or more: Change Prey Condition Damage to 1d10.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Barrier</h3>
+                    <h3>Calming Chord</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Support</li>
-                      <li><b>AP Cost:</b> 1</li>
+                      <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 2</li>
                       <li><b>Die Roll:</b> -</li>
-                      <li><b>Target:</b> Ally</li>
-                      <li><b>Range:</b> 5</li>
+                      <li><b>Target:</b> Self, Aura</li>
+                      <li><b>Range:</b> 2</li>
                     </ul>
-                    <p><b>Effect:</b> Barrier Condition for 3 Turns. <br /> <em>Barrier Condition:</em> Target gains Temporary HP 1d10 that is consumed before HP
-                    </p>
-                    <p><b>Special:</b> Character WIS 10 or more: Change Temporary HP to 1d12.</p>
+                    <p><b>Effect:</b> Self gains Calming Chord Condition for 3 Turns. <br /> <em>Calming Chord Condition:</em> Allies in Aura gain Resistance Rolls +1d4.</p>
+                    <p><b>Special:</b> Character WIS 10 or more: Add at the End of the Character's Turn, Allies in Aura Heal 1d6.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Patience</h3>
+                    <h3>Implusive</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Passive</li>
@@ -135,7 +128,7 @@
                       <li><b>Target:</b> Self</li>
                       <li><b>Range:</b> -</li>
                     </ul>
-                    <p><b>Effect:</b> Self gains Resistance Rolls +2.</p>
+                    <p><b>Effect:</b> Self gains Status Rolls +2.</p>
                     <p><b>Special:</b> Character Level 10: Add Self gains AP +1.</p>
                   </div>
                 </div>
@@ -146,26 +139,26 @@
                 <div class="lib-card-wrapper">
 
                   <div class="lib-card">
-                    <h3>Corrosive Edge</h3>
+                    <h3>Slipstream</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Damage</li>
-                      <li><b>AP Cost:</b> 1</li>
+                      <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 3</li>
                       <li><b>Die Roll:</b> Attack</li>
-                      <li><b>Target:</b> Enemy</li>
-                      <li><b>Range:</b> 1</li>
+                      <li><b>Target:</b> Enemy, Self</li>
+                      <li><b>Range:</b> 5</li>
                     </ul>
-                    <p><b>Effect:</b> Enemy takes Water Damage 2d8.</p>
-                    <p><b>Special:</b> Character Water EM 15 or more: Add Enemy takes Attack Rolls -1d6 for 3 Turns.</p>
+                    <p><b>Effect:</b> Enemy takes Wind Damage 2d6.  Self moves to an open Space 1 space away from the Enemy.</p>
+                    <p><b>Special:</b> Enemy is at max Range: Change the AP Cost to 1.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Coldsnap</h3>
+                    <h3>Howling Break</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Control</li>
@@ -173,35 +166,35 @@
                       <li><b>Cooldown:</b> 3</li>
                       <li><b>Die Roll:</b> Status</li>
                       <li><b>Target:</b> Splash, Enemy</li>
-                      <li><b>Range:</b> 4</li>
+                      <li><b>Range:</b> 3</li>
                     </ul>
-                    <p><b>Effect:</b> 2d10, if successful: Enemy and Splash take Defense Rolls -1d6 for 3 Turns.</p>
-                    <p><b>Special:</b> Enemy has Chill Condition: Enemy and Splash take Damage 2d6.</p>
+                    <p><b>Effect:</b> 2d8, if successful: Enemy and Splash are moved 2 spaces away.</p>
+                    <p><b>Special:</b> Enemy has Prey Condition: Add Enemy and Splash take Damage 1d10.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Foreseen</h3>
+                    <h3>Moon's Minuet</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Support</li>
-                      <li><b>AP Cost:</b> 1</li>
+                      <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 3</li>
                       <li><b>Die Roll:</b> -</li>
-                      <li><b>Target:</b> Ally</li>
-                      <li><b>Range:</b> 5</li>
+                      <li><b>Target:</b> Self, Aura</li>
+                      <li><b>Range:</b> 2</li>
                     </ul>
-                    <p><b>Effect:</b> Ally gains Foreseen Condition for 1 Turn.<br />
-                    <em>Foreseen Condition:</em> During the Target's next Die Roll, roll twice and take the higher result and remove the Foreseen Condition.
+                    <p><b>Effect:</b> Self gains Moon's Minuet Condition for 3 Turns.<br />
+                    <em>Moon's Minuet Condition:</em> Allies in Aura gain Status Rolls +1d6 and Movement +1.
                     </p>
-                    <p><b>Special:</b> Ally has the Barrier Condition: Add Ally gains Initiative +10 for 1 Turn.</p>
+                    <p><b>Special:</b> Character Wind EM 15 or more: Add at the End of the Character's Turn, Allies in Aura Heall 1d6.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Cunning</h3>
+                    <h3>Unfettered</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Passive</li>
@@ -211,8 +204,8 @@
                       <li><b>Target:</b> Self</li>
                       <li><b>Range:</b> -</li>
                     </ul>
-                    <p><b>Effect:</b> Self gains Water EM +2 and Initiative +5.</p>
-                    <p><b>Special:</b> Character Water EM 15 or more: Add Self gains Attack Rolls +2.</p>
+                    <p><b>Effect:</b> Self gains Wind EM +2 and Movement +1.</p>
+                    <p><b>Special:</b> Character Wind EM 15 or more: Self gains Resistance Rolls +2.</p>
                   </div>
                 </div>
                 </section>
@@ -221,61 +214,61 @@
                   <h2>Rank 3</h2>
                 <div class="lib-card-wrapper">
                   <div class="lib-card">
-                    <h3>Water Whip</h3>
+                    <h3>Downburst</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
-                      <li><b>Rank:</b> 3</li>
-                      <li><b>CP Cost:</b> 6</li>
-                      <li><b>Type:</b> Damage</li>
-                      <li><b>AP Cost:</b> 2</li>
-                      <li><b>Cooldown:</b> 4</li>
-                      <li><b>Die Roll:</b> Attack</li>
-                      <li><b>Target:</b> Burst, Enemy</li>
-                      <li><b>Range:</b> 3</li>
-                    </ul>
-                    <p><b>Effect:</b> Enemies in Burst take Water Damage 3d6.</p>
-                    <p><b>Special:</b> Character Water EM 20 or more: Enemies in Burst take Status Rolls -1d8 for 3 Turns.</p>
-                  </div>
-
-                  <div class="lib-card">
-                    <h3>Permafrost</h3>
-                    <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
                       <li><b>Type:</b> Control</li>
                       <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 4</li>
-                      <li><b>Die Roll:</b> Status</li>
-                      <li><b>Target:</b> Area - 3x3</li>
-                      <li><b>Range:</b> 3</li>
+                      <li><b>Die Roll:</b> Attack</li>
+                      <li><b>Target:</b> Burst, Enemy</li>
+                      <li><b>Range:</b> 2</li>
                     </ul>
-                    <p><b>Effect:</b> 3d6, if successful: Targets in Area take Resistance Rolls -1d8 for 3 Turns.</p>
-                    <p><b>Special:</b> Enemy in Area has Chill Condition: Targets in Area takes Damage 2d10.</p>
+                    <p><b>Effect:</b> 3d8, if successful: Enemy in Burst are moved 2 spaces away.</p>
+                    <p><b>Special:</b> If Character used Slipstream this Turn: Change the AP Cost to 1.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Fate's Hand</h3>
+                    <h3>Heavensfire</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
+                      <li><b>Rank:</b> 3</li>
+                      <li><b>CP Cost:</b> 6</li>
+                      <li><b>Type:</b> Damage</li>
+                      <li><b>AP Cost:</b> 2</li>
+                      <li><b>Cooldown:</b> 4</li>
+                      <li><b>Die Roll:</b> Status</li>
+                      <li><b>Target:</b> Area - 5x5</li>
+                      <li><b>Range:</b> 3</li>
+                    </ul>
+                    <p><b>Effect:</b> Targets in Area takes Wind Damage 3d6.</p>
+                    <p><b>Special:</b> Enemy in Area has Prey Condition: Add Targets in Area take Resistance Rolls -1d8 for 3 Turns.</p>
+                  </div>
+
+                  <div class="lib-card">
+                    <h3>Auspex Aria</h3>
+                    <ul>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
                       <li><b>Type:</b> Support</li>
                       <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 4</li>
                       <li><b>Die Roll:</b> -</li>
-                      <li><b>Target:</b> Ally</li>
+                      <li><b>Target:</b> Self, Ally</li>
                       <li><b>Range:</b> 5</li>
                     </ul>
-                    <p><b>Effect:</b> Ally gains Fate's Hand Condition for 3 Turns.<br />
-                    <em>Fate's Hand Condition:</em> When the Target would take Damage, the Target Heals 3d6 and remove Fate's Hand Condition.</p>
-                    <p><b>Special:</b> Ally has the Barrier Condition: Change the AP Cost to 1.</p>
+                    <p><b>Effect:</b> Self gains Auspex Aria Condition for 3 Turns.<br />
+                    <em>Auspex Aria Condition:</em> At the end of the Character's Turn, Allies in the Aura may move 2 spaces.</p>
+                    <p><b>Special:</b> Character Wind EM 20 or more: Add at the End of the Character's Turn, Allies in Aura Heal 1d6.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Manipulative</h3>
+                    <h3>Freedom</h3>
                     <ul>
-                      <li><b>Element:</b> Water</li>
+                      <li><b>Element:</b> Wind</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
                       <li><b>Type:</b> Passive</li>
@@ -285,8 +278,8 @@
                       <li><b>Target:</b> Self</li>
                       <li><b>Range:</b> -</li>
                     </ul>
-                    <p><b>Effect:</b> Self gains Defense Rolls +1d6 and Resistance Rolls +1d6.</p>
-                    <p><b>Special:</b> Character Initiative is 25 or more: Add Self ignores Line of Sight when targeting Allies.</p>
+                    <p><b>Effect:</b> Self gains Movement +1 & Initiative +5.</p>
+                    <p><b>Special:</b> Character has Movement 6 or more: Add Self may move through Obstacles.</p>
                   </div>
                 </div>
                 </section>

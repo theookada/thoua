@@ -19,42 +19,36 @@
 
       <header>
         <div class="header-wrapper">
-          <div class="header-content">
 
-            <!-- LOGO -->
-            <section class="logo">
-              <a href="../../index.html"><img src="../../img/thoualogo.png"/></a>
-            </section>
+          <figure class="logo"><!-- LOGO -->
+            <a href="../../index.html"><img src="../../img/thoualogo.png"/></a>
+          </figure>
 
-            <!-- TOP Navigation -->
-            <nav>
-
-              <ul>
-                <li><a href="../../index.html">News</a></li>
+          <nav><!-- TOP Navigation -->
+            <ul>
+              <li class="dropdown">
+                <a class="dropbtn">Ruleset</a>
+                <div class="dropdown-content">
+                  <a href="../../ruleset/character/index.html">Characters</a>
+                  <a href="../../ruleset/die-roll/index.html">Die Rolls</a>
+                  <a href="../../ruleset/combat/index.html">Combat</a>
+                  <a href="../../ruleset/artifact/index.html">Artifacts</a>
+                  <a href="../../ruleset/abilities/index.html">Abilities</a>
+                </div>
+                </li>
                 <li class="dropdown">
-                  <a class="dropbtn">Ruleset</a>
+                  <a class="dropbtn">Elements</a>
                   <div class="dropdown-content">
-                    <a href="../../ruleset/character/index.html">Characters</a>
-                    <a href="../../ruleset/die-roll/index.html">Die Rolls</a>
-                    <a href="../../ruleset/combat/index.html">Combat</a>
-                    <a href="../../ruleset/artifact/index.html">Artifacts</a>
-                    <a href="../../ruleset/abilities/index.html">Abilities</a>
+                    <a href="../../element/earth-abil/index.html">Earth</a>
+                    <a href="../../element/fire-abil/index.html">Fire</a>
+                    <a href="../../element/water-abil/index.html">Water</a>
+                    <a href="../../element/wind-abil/index.html">Wind</a>
                   </div>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropbtn">Ability Library</a>
-                    <div class="dropdown-content">
-                      <a href="../../ability-library/earth-abil/index.html">Earth</a>
-                      <a href="../../ability-library/fire-abil/index.html">Fire</a>
-                      <a href="../../ability-library/water-abil/index.html">Water</a>
-                      <a href="../../ability-library/wind-abil/index.html">Wind</a>
-                    </div>
-                  </li>
-                  <li><a href="../../about/index.html">About</a></li>
-              </ul>
+                </li>
+                <li><a href="../../about/index.html">About</a></li>
+            </ul>
+          </nav> <!-- END TOP Navigation -->
 
-            </nav> <!-- END TOP Navigation -->
-          </div> <!-- END header-content -->
         </div> <!-- END header-wrapper -->
       </header> <!-- END HEADER -->
 
@@ -62,34 +56,34 @@
           <div class="lib-wrapper">
             <section class="lib-content">
                 <div class="lib-head">
-                  <img src="../../img/earthsign.png"/>
-                  <h2>Earth Abilities</h2>
+                  <img src="../../img/firesign.png"/>
+                  <h2>Fire Abilities</h2>
                 </div>
 
                 <section class="lib-rank1">
                   <h2>Rank 1</h2>
                 <div class="lib-card-wrapper">
                   <div class="lib-card">
-                    <h3>Wild Swing</h3>
+                    <h3>Cinder Thrust</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Damage</li>
                       <li><b>AP Cost:</b> 1</li>
                       <li><b>Cooldown:</b> 2</li>
                       <li><b>Die Roll:</b> Attack</li>
-                      <li><b>Target:</b> Enemy</li>
-                      <li><b>Range:</b> 1</li>
+                      <li><b>Target:</b> Line</li>
+                      <li><b>Range:</b> 2</li>
                     </ul>
-                    <p><b>Effect:</b> Enemy takes Earth Damage 1d10.</p>
-                    <p><b>Special:</b> Character STR 10 or more: Add Enemy takes Status Rolls -2 for 3 Turns.</p>
+                    <p><b>Effect:</b> Targets in Line takes Fire Damage 1d6.</p>
+                    <p><b>Special:</b> Character STR 10 or more: Change Fire Damage to 1d8.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Root</h3>
+                    <h3>Burn</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Control</li>
@@ -97,17 +91,17 @@
                       <li><b>Cooldown:</b> 2</li>
                       <li><b>Die Roll:</b> Status</li>
                       <li><b>Target:</b> Enemy</li>
-                      <li><b>Range:</b> 3</li>
+                      <li><b>Range:</b> 4</li>
                     </ul>
-                    <p><b>Effect:</b> 1d12, if successful: Root Condition for 3 Turns. <br />
-                    <em>Root Condition:</em> Target takes Fire EM -5 and Movement -4.  When Target takes Fire Damage, remove Root Condition.</p>
-                    <p><b>Special:</b> Character INT 10 or more: Add to Root Condition Target takes Defense Rolls -2.</p>
+                    <p><b>Effect:</b> 1d10, if successful: Burn Condition for 3 Turns. <br />
+                    <em>Burn Condition:</em> At the End of the Character's Turn, Target takes Damage 1d4.</p>
+                    <p><b>Special:</b> Character INT 10 or more: Change Burn Condition Damage to 1d6.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Forge</h3>
+                    <h3>Soothe</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Support</li>
@@ -115,16 +109,16 @@
                       <li><b>Cooldown:</b> 2</li>
                       <li><b>Die Roll:</b> -</li>
                       <li><b>Target:</b> Ally</li>
-                      <li><b>Range:</b> 3</li>
+                      <li><b>Range:</b> 4</li>
                     </ul>
-                    <p><b>Effect:</b> Ally gains Attack Rolls +2 for 3 Turns.</p>
-                    <p><b>Special:</b> Character VIT 10 or more: Add Ally gains Status Rolls +2 for 3 Turns.</p>
+                    <p><b>Effect:</b> Ally Heals 1d8.</p>
+                    <p><b>Special:</b> Character VIT 10 or more: Change Heal to 1d10.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Resolve</h3>
+                    <h3>Courage</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 1</li>
                       <li><b>CP Cost:</b> 2</li>
                       <li><b>Type:</b> Passive</li>
@@ -134,7 +128,7 @@
                       <li><b>Target:</b> Self</li>
                       <li><b>Range:</b> -</li>
                     </ul>
-                    <p><b>Effect:</b> Self gains Defense Rolls +2.</p>
+                    <p><b>Effect:</b> Self gains Attack Rolls +2.</p>
                     <p><b>Special:</b> Character Level 10: Add Self gains AP +1.</p>
                   </div>
                 </div>
@@ -145,60 +139,60 @@
                 <div class="lib-card-wrapper">
 
                   <div class="lib-card">
-                    <h3>Rising Arch</h3>
+                    <h3>Firebrand</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Damage</li>
                       <li><b>AP Cost:</b> 1</li>
                       <li><b>Cooldown:</b> 3</li>
                       <li><b>Die Roll:</b> Attack</li>
-                      <li><b>Target:</b> Line</li>
-                      <li><b>Range:</b> 4</li>
+                      <li><b>Target:</b> Burst, Enemy</li>
+                      <li><b>Range:</b> 1</li>
                     </ul>
-                    <p><b>Effect:</b> Line takes Earth Damage 2d6.</p>
-                    <p><b>Special:</b> Character Earth EM 15 or more: Add Obstacles in Line are destroyed.</p>
+                    <p><b>Effect:</b> Enemies in Burst take Fire Damage 2d6.</p>
+                    <p><b>Special:</b> Character HP below 50%: Add Fire Damage +1d6.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Overgrowth</h3>
+                    <h3>Raze</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Damage</li>
                       <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 3</li>
                       <li><b>Die Roll:</b> Status</li>
-                      <li><b>Target:</b> Area - 2x2</li>
+                      <li><b>Target:</b> Splash, Enemy</li>
                       <li><b>Range:</b> 4</li>
                     </ul>
-                    <p><b>Effect:</b> Targets in Area takes Earth Damage 2d6.</p>
-                    <p><b>Special:</b> Enemy in Area has Root Condition: Add Earth Damage +1d6.</p>
+                    <p><b>Effect:</b> Enemy and Splash takes Fire Damage 2d8.</p>
+                    <p><b>Special:</b> Enemy has Burn Condition: Add Fire Damage +1d8.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Tempering</h3>
+                    <h3>Radiance</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Support</li>
-                      <li><b>AP Cost:</b> 1</li>
+                      <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 3</li>
                       <li><b>Die Roll:</b> -</li>
                       <li><b>Target:</b> Burst, Ally</li>
                       <li><b>Range:</b> 2</li>
                     </ul>
-                    <p><b>Effect:</b> Ally and Splash gains Defense Rolls +4 for 3 Turns.</p>
-                    <p><b>Special:</b> Character HP above 50%: Add Ally and Splash Heals 2d6.</p>
+                    <p><b>Effect:</b> Allies in Burst Heal 2d6.</p>
+                    <p><b>Special:</b> Character Fire EM 15 or more: Add Heal +1d6.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Stalwart</h3>
+                    <h3>Ambition</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 2</li>
                       <li><b>CP Cost:</b> 4</li>
                       <li><b>Type:</b> Passive</li>
@@ -208,8 +202,8 @@
                       <li><b>Target:</b> Self</li>
                       <li><b>Range:</b> -</li>
                     </ul>
-                    <p><b>Effect:</b> Self gains Earth EM +2 and HP +5.</p>
-                    <p><b>Special:</b> Character Earth EM 15 or more: Add Self gains Status Rolls +2.</p>
+                    <p><b>Effect:</b> Self gains Fire EM +2 and HP +5.</p>
+                    <p><b>Special:</b> Character Fire EM 15 or more: Add Self gains Defense Rolls +2.</p>
                   </div>
                 </div>
                 </section>
@@ -218,62 +212,60 @@
                   <h2>Rank 3</h2>
                 <div class="lib-card-wrapper">
                   <div class="lib-card">
-                    <h3>Titan Hammer</h3>
+                    <h3>To Ash</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
                       <li><b>Type:</b> Damage</li>
                       <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 4</li>
                       <li><b>Die Roll:</b> Attack</li>
-                      <li><b>Target:</b> Splash, Enemy</li>
+                      <li><b>Target:</b> Enemy</li>
                       <li><b>Range:</b> 2</li>
                     </ul>
-                    <p><b>Effect:</b> Enemy and Splash takes Earth Damage 3d10.</p>
-                    <p><b>Special:</b> Character Earth EM 20 or more: Add Enemy and Splash takes Resistance Rolls -5 for 3 Turns.</p>
+                    <p><b>Effect:</b> Enemy takes Fire Damage 3d8.</p>
+                    <p><b>Special:</b> Character Fire EM 20 or more: Add Fire Damage +2d8.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Reap and Sow</h3>
+                    <h3>Inferno</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
-                      <li><b>Type:</b> Control</li>
+                      <li><b>Type:</b> Damage</li>
                       <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 4</li>
                       <li><b>Die Roll:</b> Status</li>
                       <li><b>Target:</b> Area - 3x3</li>
                       <li><b>Range:</b> 3</li>
                     </ul>
-                    <p><b>Effect:</b> 3d6, if successful: Enemies in Area gain Reap Condition for 3 Turns.<br />
-                    <em>Reap Condition:</em> At the End of the Character's Turn, Target takes Damage 1d8.</p>
-                    <p><b>Special:</b> If more Allies than Enemies in Area: Change Effect to Allies in Area gain Sow Condition for 3 Turns.<br />
-                    <em>Sow Condition:</em> At the End of the Character's Turn, Target Heals 1d8.</p>
+                    <p><b>Effect:</b> Targets in Area take Fire Damage 3d10.</p>
+                    <p><b>Special:</b> Enemy in Area has Burn Condition: Add Targets in Area take Defense Rolls -1d6 for 3 Turns.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Aegis</h3>
+                    <h3>Vigor</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
                       <li><b>Type:</b> Support</li>
-                      <li><b>AP Cost:</b> 1</li>
+                      <li><b>AP Cost:</b> 2</li>
                       <li><b>Cooldown:</b> 4</li>
                       <li><b>Die Roll:</b> -</li>
                       <li><b>Target:</b> Ally</li>
-                      <li><b>Range:</b> 2</li>
+                      <li><b>Range:</b> 4</li>
                     </ul>
-                    <p><b>Effect:</b> Ally gains All EM +5 for 3 Turns.</p>
-                    <p><b>Special:</b> Ally HP above 50%: Change to All EM +10.</p>
+                    <p><b>Effect:</b> Ally Heals 3d12.</p>
+                    <p><b>Special:</b> Ally HP below 50%: Add Heal +2d12.</p>
                   </div>
 
                   <div class="lib-card">
-                    <h3>Pride</h3>
+                    <h3>Fury</h3>
                     <ul>
-                      <li><b>Element:</b> Earth</li>
+                      <li><b>Element:</b> Fire</li>
                       <li><b>Rank:</b> 3</li>
                       <li><b>CP Cost:</b> 6</li>
                       <li><b>Type:</b> Passive</li>
@@ -283,8 +275,8 @@
                       <li><b>Target:</b> Self</li>
                       <li><b>Range:</b> -</li>
                     </ul>
-                    <p><b>Effect:</b> Self gains HP +10, Defense Rolls +2 and Resistance Rolls +2.</p>
-                    <p><b>Special:</b> Character HP above 50%: Add at the End of the Character's Turn, Penalties -1 Turn.</p>
+                    <p><b>Effect:</b> Self gains Attack Rolls +1d4, Status Rolls +1d4, Defense Rolls -3 and Resistance Rolls -3.</p>
+                    <p><b>Special:</b> Character HP below 50%: Change Attack Rolls and Status Rolls to +1d8.  Change Defense Rolls and Resistance Rolls to -6.</p>
                   </div>
                 </div>
                 </section>

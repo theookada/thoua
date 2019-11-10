@@ -242,7 +242,6 @@ header nav li a,
   text-align: center;
   padding: 5px 20px;
   text-decoration: none;
-  font-weight: 600;
 }
 
 header li a:hover,
@@ -308,17 +307,19 @@ main {
 }
 
 .main-content .card {
-  background-color: #807ef2;
+  background-color: #f1f1f1;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   flex-basis: 400px;
   margin: 15px 0;
+  padding: 5px;
 }
 
 .main-content .card h3,
 .main-content .card h4 {
   width: 100%;
+  line-height: 2px;
 }
 
 .main-content .card-img img {
@@ -343,7 +344,7 @@ main {
 }
 
 .aside-content .card {
-  background-color: #7ef298;
+  background-color: #e3e3e3;
   width: 30%;
   margin: 15px 0;
   display: flex;
