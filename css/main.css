@@ -407,7 +407,7 @@ main #lib {
 .lib-card {
   background: #ebebeb;
   max-width: 700px;
-  margin: 5px 10px;
+  margin: 5px 5px;
   padding: 5px;
   display: flex;
   justify-content: flex-start;
