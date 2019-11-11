@@ -56,348 +56,358 @@
           <div class="main-wrapper">
             <section class="main-content">
 
-              <div id="chr-sum">
-                <h2>Player Character</h2>
-                <p>A Player Character (referred to as Character) is a manifestation of the Player within the game.  As the Player plays the game the Character grows and gains resources to grow stronger.</p>
+              <div class="card">
+                <div id="chr-sum">
+                  <h2>Player Character</h2>
+                  <p>A Player Character (referred to as Character) is a manifestation of the Player within the game.  As the Player plays the game the Character grows and gains resources to grow stronger.</p>
+                </div>
               </div>
 
-              <div id="chr-create">
-                <h2>Character Creation</h2>
-                <p>To create a Level 1 Character, the Player will need to determine the following:</p>
-              </div>
-                <ol>
-                  <li><h3>1. Determine Starting Attributes</h3></li>
-                  <li><h3>2. Select a Race</h3></li>
-                  <li><h3>3. Total Up Character Stats</h3></li>
-                  <li><h3>4. Purchase Abilities</h3></li>
-                </ol>
-
-              <div id="chr-stat">
-                <h2>Character Stats</h2>
-                <p>Character Stats are the numerical values associated with the Character’s Attributes, Movement, HP, etc.  These Stats will determine your Character’s overall strengths and weaknesses.  The following are all the key Character Stats.</p>
-
-                <table>
-                    <tr>
-                      <td><b>Strength (STR):</b> Added to Attack Rolls</td>
-                      <td><b>Attack Rolls:</b> Ability Die + STR</td>
-                    </tr>
-                    <tr>
-                      <td><b>Intelligence (INT):</b> Added to Status Rolls</td>
-                      <td><b>Status Rolls:</b> Ability Die + INT</td>
-                    </tr>
-                    <tr>
-                      <td><b>Vitality (VIT):</b> Added to Defense Rolls</td>
-                      <td><b>Defense Rolls:</b> EM Die + VIT</td>
-                    </tr>
-                    <tr>
-                      <td><b>Wisdom (WIS):</b> Added to Resistance Rolls</td>
-                      <td><b>Resistance Rolls:</b> EM Die + WIS</td>
-                    </tr>
-                    <tr>
-                      <td><b>Health Points (HP):</b> Race HP + VIT</td>
-                      <td><b>Action Points (AP):</b> 2</td>
-                    </tr>
-                    <tr>
-                      <td><b>Movement:</b> Race Movement</td>
-                      <td><b>Initiative:</b> 1d12 + WIS</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2"><b>Elemental Map (EM):</b> Determines Character's EM Die (See more in <a href="#chr-em">Elemental Map</a>)</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2"><b>Artifacts:</b> Equipped Artifacts (See more in <a href="../artifact/index.html">Artifacts</a>)</td>
-                    </tr>
-                </table>
-
-                <section>
-                  <h3>Attributes</h3>
-                  <p>Attributes are how elemental energy is represented in the Character.  Attributes affect the Character’s Die Rolls and <a href="#chr-em">Elemental Map</a>.</p>
-
-                  <p>When determining the Character’s base Attribute values, <em>all Attributes start at 3.</em>  The Player then decides if they wish to raise or lower Attributes to a <em>maximum of 5 or minimum of 1.</em>  Raising a selected Attribute will lower it’s linked Attribute by an equal amount.  <em>STR and INT are linked, while VIT and WIS are linked.</em></p>
-
-                  <p>After the Character’s base Attributes are determined.  At Level 1, and every odd level afterwards, the Player is able to increase any Attribute by +1.  <em>A single Attribute may be raised to a maximum of 10.</em></p>
-                </section>
-
-                <section>
-                  <h3>Health Points (HP)</h3>
-                  <p>Determines how much damage a Character can take until they are considered Defeated.  The Character determines total HP by adding together HP per Level from their Race, VIT and other bonuses.</p>
-                </section>
-
-                <section>
-                  <h3>Action Points (AP)</h3>
-                  <p>Action Points determine how many abilities or actions a Character may take during their Turn.  Characters begin with  a base AP of 2.  Once the Character uses all available AP, their turn ends.  At the Start of the Character’s Turn, the Character’s AP is restored.  AP from previous turns do not carry over into the Character’s next turn.</p>
-                </section>
-
-                <section>
-                  <h3>Movement</h3>
-                  <p>Movement determines the range that the Character may move during a Movement Action.  The Character’s base Movement is determined by the Character’s <a href="#chr-race">Race</a>.</p>
-                </section>
-
-                <section>
-                  <h3>Initiative</h3>
-                  <p>Initiative determines when the Character takes their turn during a round of combat.  The Character’s Initiative is determined by rolling 1d12 and adding WIS at the start of combat.</p>
-                </section>
+              <div class="card">
+                <div id="chr-create">
+                  <h2>Character Creation</h2>
+                  <p>To create a Level 1 Character, the Player will need to determine the following:</p>
+                </div>
+                  <ol>
+                    <li><h3>1. Determine Starting Attributes</h3></li>
+                    <li><h3>2. Select a Race</h3></li>
+                    <li><h3>3. Total Up Character Stats</h3></li>
+                    <li><h3>4. Purchase Abilities</h3></li>
+                  </ol>
               </div>
 
-              <div id="chr-em">
-                <h2>Elemental Map</h2>
-                <p>Elemental Map determines the Character’s EM Die and is a general indication of how potent an Element for the Character.  The Character’s base EM is determined by their Attributes.  Once that is determined, EM is then modified depending on the Abilities the Character purchases.  Much like Attributes, raising the EM of an element will lower the EM of another element.  See the following tables for more.</p>
+              <div class="card">
+                <div id="chr-stat">
+                  <h2>Character Stats</h2>
+                  <p>Character Stats are the numerical values associated with the Character’s Attributes, Movement, HP, etc.  These Stats will determine your Character’s overall strengths and weaknesses.  The following are all the key Character Stats.</p>
 
-                <table>
-                  <tr>
-                    <th>Element</th>
-                    <th>Attribute</th>
-                    <th>EM raised</th>
-                    <th>EM lowered</th>
-                  </tr>
-                  <tr>
-                    <td>Earth</td>
-                    <td>VIT</td>
-                    <td>Earth</td>
-                    <td>Fire</td>
-                  </tr>
-                  <tr>
-                    <td>Fire</td>
-                    <td>STR</td>
-                    <td>Fire</td>
-                    <td>Water</td>
-                  </tr>
-                  <tr>
-                    <td>Water</td>
-                    <td>WIS</td>
-                    <td>Water</td>
-                    <td>Wind</td>
-                  </tr>
-                  <tr>
-                    <td>Wind</td>
-                    <td>INT</td>
-                    <td>Wind</td>
-                    <td>Earth</td>
-                  </tr>
-                </table>
-                  <br />
-                <table>
-                  <tr>
-                    <th>EM Total</th>
-                    <th>EM Die</th>
-                  </tr>
-                  <tr>
-                    <td>25 or more</td>
-                    <td>2d10</td>
-                  </tr>
-                  <tr>
-                    <td>20 to 24</td>
-                    <td>2d8</td>
-                  </tr>
-                  <tr>
-                    <td>15 to 19</td>
-                    <td>2d6</td>
-                  </tr>
-                  <tr>
-                    <td>10 to 14</td>
-                    <td>1d12</td>
-                  </tr>
-                  <tr>
-                    <td>2 to 9</td>
-                    <td>1d10</td>
-                  </tr>
-                  <tr>
-                    <td>-1 to 1</td>
-                    <td>1d8</td>
-                  </tr>
-                  <tr>
-                    <td>-2 to -9</td>
-                    <td>1d6</td>
-                  </tr>
-                  <tr>
-                    <td>-10 to -14</td>
-                    <td>1d4</td>
-                  </tr>
-                  <tr>
-                    <td>-15 to -19</td>
-                    <td>1d2</td>
-                  </tr>
-                  <tr>
-                    <td>-20 to less</td>
-                    <td>1</td>
-                  </tr>
-                </table>
+                  <table>
+                      <tr>
+                        <td><b>Strength (STR):</b> Added to Attack Rolls</td>
+                        <td><b>Attack Rolls:</b> Ability Die + STR</td>
+                      </tr>
+                      <tr>
+                        <td><b>Intelligence (INT):</b> Added to Status Rolls</td>
+                        <td><b>Status Rolls:</b> Ability Die + INT</td>
+                      </tr>
+                      <tr>
+                        <td><b>Vitality (VIT):</b> Added to Defense Rolls</td>
+                        <td><b>Defense Rolls:</b> EM Die + VIT</td>
+                      </tr>
+                      <tr>
+                        <td><b>Wisdom (WIS):</b> Added to Resistance Rolls</td>
+                        <td><b>Resistance Rolls:</b> EM Die + WIS</td>
+                      </tr>
+                      <tr>
+                        <td><b>Health Points (HP):</b> Race HP + VIT</td>
+                        <td><b>Action Points (AP):</b> 2</td>
+                      </tr>
+                      <tr>
+                        <td><b>Movement:</b> Race Movement</td>
+                        <td><b>Initiative:</b> 1d12 + WIS</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><b>Elemental Map (EM):</b> Determines Character's EM Die (See more in <a href="#chr-em">Elemental Map</a>)</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><b>Artifacts:</b> Equipped Artifacts (See more in <a href="../artifact/index.html">Artifacts</a>)</td>
+                      </tr>
+                  </table>
 
+                  <section>
+                    <h3>Attributes</h3>
+                    <p>Attributes are how elemental energy is represented in the Character.  Attributes affect the Character’s Die Rolls and <a href="#chr-em">Elemental Map</a>.</p>
+
+                    <p>When determining the Character’s base Attribute values, <em>all Attributes start at 3.</em>  The Player then decides if they wish to raise or lower Attributes to a <em>maximum of 5 or minimum of 1.</em>  Raising a selected Attribute will lower it’s linked Attribute by an equal amount.  <em>STR and INT are linked, while VIT and WIS are linked.</em></p>
+
+                    <p>After the Character’s base Attributes are determined.  At Level 1, and every odd level afterwards, the Player is able to increase any Attribute by +1.  <em>A single Attribute may be raised to a maximum of 10.</em></p>
+                  </section>
+
+                  <section>
+                    <h3>Health Points (HP)</h3>
+                    <p>Determines how much damage a Character can take until they are considered Defeated.  The Character determines total HP by adding together HP per Level from their Race, VIT and other bonuses.</p>
+                  </section>
+
+                  <section>
+                    <h3>Action Points (AP)</h3>
+                    <p>Action Points determine how many abilities or actions a Character may take during their Turn.  Characters begin with  a base AP of 2.  Once the Character uses all available AP, their turn ends.  At the Start of the Character’s Turn, the Character’s AP is restored.  AP from previous turns do not carry over into the Character’s next turn.</p>
+                  </section>
+
+                  <section>
+                    <h3>Movement</h3>
+                    <p>Movement determines the range that the Character may move during a Movement Action.  The Character’s base Movement is determined by the Character’s <a href="#chr-race">Race</a>.</p>
+                  </section>
+
+                  <section>
+                    <h3>Initiative</h3>
+                    <p>Initiative determines when the Character takes their turn during a round of combat.  The Character’s Initiative is determined by rolling 1d12 and adding WIS at the start of combat.</p>
+                  </section>
+                </div>
               </div>
 
-              <div id="chr-race">
-                <h2>Races</h2>
-                <p>Races represent the denizens of the world.  Although they initially were thralls to the Thoua, they were able to rise up against their masters to claim this world for their own.  Due to this lineage, most retain features or aspects of their ancestral forms.</p>
+              <div class="card">
+                <div id="chr-em">
+                  <h2>Elemental Map</h2>
+                  <p>Elemental Map determines the Character’s EM Die and is a general indication of how potent an Element for the Character.  The Character’s base EM is determined by their Attributes.  Once that is determined, EM is then modified depending on the Abilities the Character purchases.  Much like Attributes, raising the EM of an element will lower the EM of another element.  See the following tables for more.</p>
 
-                <p>The Character’s Race provides HP per Level, base Movement, an Attribute Increase and a unique Racial Ability.</p>
-
-                <table>
-                  <tr>
-                    <th>Race</th>
-                    <th>Attribute Increase</th>
-                    <th>HP per Level</th>
-                    <th>Movement</th>
-                    <th>Racial Ability</th>
-                  </tr>
-                  <tr>
-                    <td>Jotun</td>
-                    <td>STR or VIT +2</td>
-                    <td>8</td>
-                    <td>3</td>
-                    <td><em>Crush:</em> Once per Combat, destroy all Obstacles within Range 1</td>
-                  </tr>
-                  <tr>
-                    <td>Hethiva</td>
-                    <td>STR or WIS +2</td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td><em>Influence:</em> Once per Combat, the next Ability used this Turn gains Range +2</td>
-                  </tr>
-                  <tr>
-                    <td>Diop</td>
-                    <td>INT or WIS +2</td>
-                    <td>8</td>
-                    <td>3</td>
-                    <td><em>Mischief:</em> Once per Combat, the next Ability used this Turn ignores Line of Sight</td>
-                  </tr>
-                  <tr>
-                    <td>Suwa</td>
-                    <td>INT or VIT +2</td>
-                    <td>6</td>
-                    <td>4</td>
-                    <td><em>Jaunt:</em> Once per Combat, during the next Movement Action may move through Enemies and Obstacles</td>
-                  </tr>
-                </table>
-
-                <section id="race-lore">
-                  <article>
-                    <h3 class="race-lore-content">Jotun</h3>
-                    <p class="race-lore-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
-                  </article>
-
-                  <article>
-                    <h3 class="race-lore-content">Hethiva</h3>
-                    <p class="race-lore-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
-                  </article>
-
-                  <article>
-                    <h3 class="race-lore-content">Diop</h3>
-                    <p class="race-lore-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
-                  </article>
-
-                  <article>
-                    <h3 class="race-lore-content">Suwa</h3>
-                    <p class="race-lore-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
-                  </article>
-                </section>
-
+                  <table>
+                    <tr>
+                      <th>Element</th>
+                      <th>Attribute</th>
+                      <th>EM raised</th>
+                      <th>EM lowered</th>
+                    </tr>
+                    <tr>
+                      <td>Earth</td>
+                      <td>VIT</td>
+                      <td>Earth</td>
+                      <td>Fire</td>
+                    </tr>
+                    <tr>
+                      <td>Fire</td>
+                      <td>STR</td>
+                      <td>Fire</td>
+                      <td>Water</td>
+                    </tr>
+                    <tr>
+                      <td>Water</td>
+                      <td>WIS</td>
+                      <td>Water</td>
+                      <td>Wind</td>
+                    </tr>
+                    <tr>
+                      <td>Wind</td>
+                      <td>INT</td>
+                      <td>Wind</td>
+                      <td>Earth</td>
+                    </tr>
+                  </table>
+                    <br />
+                  <table>
+                    <tr>
+                      <th>EM Total</th>
+                      <th>EM Die</th>
+                    </tr>
+                    <tr>
+                      <td>25 or more</td>
+                      <td>2d10</td>
+                    </tr>
+                    <tr>
+                      <td>20 to 24</td>
+                      <td>2d8</td>
+                    </tr>
+                    <tr>
+                      <td>15 to 19</td>
+                      <td>2d6</td>
+                    </tr>
+                    <tr>
+                      <td>10 to 14</td>
+                      <td>1d12</td>
+                    </tr>
+                    <tr>
+                      <td>2 to 9</td>
+                      <td>1d10</td>
+                    </tr>
+                    <tr>
+                      <td>-1 to 1</td>
+                      <td>1d8</td>
+                    </tr>
+                    <tr>
+                      <td>-2 to -9</td>
+                      <td>1d6</td>
+                    </tr>
+                    <tr>
+                      <td>-10 to -14</td>
+                      <td>1d4</td>
+                    </tr>
+                    <tr>
+                      <td>-15 to -19</td>
+                      <td>1d2</td>
+                    </tr>
+                    <tr>
+                      <td>-20 to less</td>
+                      <td>1</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
 
-              <div id="chr-prog">
-                <h2>Character Progression</h2>
-                <p>As the Character earns EXP, their Character gains Levels which increase their Stats and grants them other benefits.  See the following the table for more.</p>
+              <div class="card">
+                <div id="chr-race">
+                  <h2>Races</h2>
+                  <p>Races represent the denizens of the world.  Although they initially were thralls to the Thoua, they were able to rise up against their masters to claim this world for their own.  Due to this lineage, most retain features or aspects of their ancestral forms.</p>
 
-                <table>
-                  <tr>
-                    <th>Level</th>
-                    <th>Total HP for Hethiva and Suwa</th>
-                    <th>Total HP for Diop and Jotun</th>
-                    <th>Level Bonus</th>
-                    <th>Total CP</th>
-                    <th>Artifact Slots</th>
-                    <th>Total EXP</th>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>6 + VIT</td>
-                    <td>8 + VIT</td>
-                    <td>Attribute Increase</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>0</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>12 + VIT</td>
-                    <td>16 + VIT</td>
-                    <td>Racial Ability +1 Use</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>4</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>18 + VIT</td>
-                    <td>24 + VIT</td>
-                    <td>Attribute Increase</td>
-                    <td>12</td>
-                    <td>1</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>24 + VIT</td>
-                    <td>32 + VIT</td>
-                    <td>Racial Ability +1 Use</td>
-                    <td>16</td>
-                    <td>1</td>
-                    <td>18</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>30 + VIT</td>
-                    <td>40 + VIT</td>
-                    <td>Attribute Increase</td>
-                    <td>18</td>
-                    <td>1</td>
-                    <td>28</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>36 + VIT</td>
-                    <td>48 + VIT</td>
-                    <td>Racial Ability +1 Use</td>
-                    <td>22</td>
-                    <td>2</td>
-                    <td>40</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>42 + VIT</td>
-                    <td>56 + VIT</td>
-                    <td>Attribute Increase</td>
-                    <td>24</td>
-                    <td>2</td>
-                    <td>54</td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>48 + VIT</td>
-                    <td>64 + VIT</td>
-                    <td>Racial Ability +1 Use</td>
-                    <td>28</td>
-                    <td>2</td>
-                    <td>70</td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>54 + VIT</td>
-                    <td>72 + VIT</td>
-                    <td>Attribute Increase</td>
-                    <td>30</td>
-                    <td>2</td>
-                    <td>88</td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>60 + VIT</td>
-                    <td>80 + VIT</td>
-                    <td>Racial Ability +1 Use</td>
-                    <td>34</td>
-                    <td>3</td>
-                    <td>108</td>
-                  </tr>
-                </table>
+                  <p>The Character’s Race provides HP per Level, base Movement, an Attribute Increase and a unique Racial Ability.</p>
+
+                  <table>
+                    <tr>
+                      <th>Race</th>
+                      <th>Attribute Increase</th>
+                      <th>HP per Level</th>
+                      <th>Movement</th>
+                      <th>Racial Ability</th>
+                    </tr>
+                    <tr>
+                      <td>Jotun</td>
+                      <td>STR or VIT +2</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td><em>Crush:</em> Once per Combat, destroy all Obstacles within Range 1</td>
+                    </tr>
+                    <tr>
+                      <td>Hethiva</td>
+                      <td>STR or WIS +2</td>
+                      <td>6</td>
+                      <td>4</td>
+                      <td><em>Influence:</em> Once per Combat, the next Ability used this Turn gains Range +2</td>
+                    </tr>
+                    <tr>
+                      <td>Diop</td>
+                      <td>INT or WIS +2</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td><em>Mischief:</em> Once per Combat, the next Ability used this Turn ignores Line of Sight</td>
+                    </tr>
+                    <tr>
+                      <td>Suwa</td>
+                      <td>INT or VIT +2</td>
+                      <td>6</td>
+                      <td>4</td>
+                      <td><em>Jaunt:</em> Once per Combat, during the next Movement Action may move through Enemies and Obstacles</td>
+                    </tr>
+                  </table>
+
+                  <section id="race-lore">
+                    <article>
+                      <h3 class="race-lore-content">Jotun</h3>
+                      <p class="race-lore-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+                    </article>
+
+                    <article>
+                      <h3 class="race-lore-content">Hethiva</h3>
+                      <p class="race-lore-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+                    </article>
+
+                    <article>
+                      <h3 class="race-lore-content">Diop</h3>
+                      <p class="race-lore-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+                    </article>
+
+                    <article>
+                      <h3 class="race-lore-content">Suwa</h3>
+                      <p class="race-lore-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+                    </article>
+                  </section>
+                </div>
+              </div>
+
+              <div class="card">
+                <div id="chr-prog">
+                  <h2>Character Progression</h2>
+                  <p>As the Character earns EXP, their Character gains Levels which increase their Stats and grants them other benefits.  See the following the table for more.</p>
+
+                  <table>
+                    <tr>
+                      <th>Level</th>
+                      <th>Total HP for Hethiva and Suwa</th>
+                      <th>Total HP for Diop and Jotun</th>
+                      <th>Level Bonus</th>
+                      <th>Total CP</th>
+                      <th>Artifact Slots</th>
+                      <th>Total EXP</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>6 + VIT</td>
+                      <td>8 + VIT</td>
+                      <td>Attribute Increase</td>
+                      <td>6</td>
+                      <td>1</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>12 + VIT</td>
+                      <td>16 + VIT</td>
+                      <td>Racial Ability +1 Use</td>
+                      <td>10</td>
+                      <td>1</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>18 + VIT</td>
+                      <td>24 + VIT</td>
+                      <td>Attribute Increase</td>
+                      <td>12</td>
+                      <td>1</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>24 + VIT</td>
+                      <td>32 + VIT</td>
+                      <td>Racial Ability +1 Use</td>
+                      <td>16</td>
+                      <td>1</td>
+                      <td>18</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>30 + VIT</td>
+                      <td>40 + VIT</td>
+                      <td>Attribute Increase</td>
+                      <td>18</td>
+                      <td>1</td>
+                      <td>28</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>36 + VIT</td>
+                      <td>48 + VIT</td>
+                      <td>Racial Ability +1 Use</td>
+                      <td>22</td>
+                      <td>2</td>
+                      <td>40</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>42 + VIT</td>
+                      <td>56 + VIT</td>
+                      <td>Attribute Increase</td>
+                      <td>24</td>
+                      <td>2</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>48 + VIT</td>
+                      <td>64 + VIT</td>
+                      <td>Racial Ability +1 Use</td>
+                      <td>28</td>
+                      <td>2</td>
+                      <td>70</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>54 + VIT</td>
+                      <td>72 + VIT</td>
+                      <td>Attribute Increase</td>
+                      <td>30</td>
+                      <td>2</td>
+                      <td>88</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>60 + VIT</td>
+                      <td>80 + VIT</td>
+                      <td>Racial Ability +1 Use</td>
+                      <td>34</td>
+                      <td>3</td>
+                      <td>108</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
 
             </section> <!--END main-content-->

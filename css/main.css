@@ -150,7 +150,7 @@ ol {
 
 
 /***** TABLE STYLES *****/
-table {
+.card table {
   border-collapse: collapse;
   width: 100%;
   font-size: 1.2em;
@@ -158,19 +158,19 @@ table {
   border: 0.1em solid #3b3b3b;
 }
 
-tr {
+.card tr {
   text-align: left;
   padding: 0.5em;
 }
 
-tr:nth-child(odd){background: #f2f2f2;}
+.card tr:nth-child(odd){background: #d9d9d9;}
 
-th {
-  background: #d0d0d0;
+.card th {
+  background: #bababa;
   padding: 0.8em 0.4em;
 }
 
-td {padding: 0.2em 0.4em;}
+.card td {padding: 0.2em 0.4em;}
 
 /* ==========================================================================
 HEADER STYLES
@@ -297,11 +297,11 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 95%;
 }
 
 .main-content {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -316,10 +316,20 @@ main {
   padding: 5px;
 }
 
+.main-content .card h2 {
+  text-align: center;
+}
+
 .main-content .card h3,
 .main-content .card h4 {
   width: 100%;
   line-height: 2px;
+}
+
+.main-content .card ol,
+.main-content .card ul {
+  margin: 0;
+  padding-left: 0.5em;
 }
 
 .main-content .card-img img {
@@ -362,11 +372,7 @@ main {
 Ruleset Pages STYLES
 ========================================================================== */
 
-#race-lore article {
-}
 
-#race-lore .race-lore-content {
-}
 
 /* ==========================================================================
 Library Pages STYLES
@@ -377,10 +383,19 @@ main #lib {
   width: 100%;
 }
 
-.lib-content .lib-card ul{
-  list-style: none;
-  padding-left: 0;
+.lib-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
+
+.lib-head img {
+  width: 300px;
+  height: auto;
+  max-height: 100%;
+}
+
 
 .lib-card-wrapper {
   display: flex;
@@ -390,8 +405,32 @@ main #lib {
 
 .lib-card {
   background: #ebebeb;
-  width: 700px;
-  margin: 10px;
+  max-width: 700px;
+  margin: 5px 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.lib-card h3 {
+  width: 90%;
+  display:flex;
+  justify-content: center;
+}
+
+.lib-card ul {
+  padding: 0;
+}
+
+.lib-card ul li {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.lib-card p {
+  width: 100%;
 }
 
 #lib h2 {
