@@ -345,7 +345,7 @@ main {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
-  width: 95%;
+  width: 100%;
 }
 
 .aside-content {
@@ -357,16 +357,22 @@ main {
 .aside-content .card {
   background-color: #e3e3e3;
   width: 30%;
-  margin: 15px 0;
+  margin: 5px 0;
+  padding: 5px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: row wrap;
   flex-basis: 400px;
 }
 
 .aside-content h3,
 .aside-content h4 {
-  width: 100%;
+  width:100%;
+  margin: 10px 0;
+}
+
+.aside-content p {
+  margin:0;
 }
 
 /* ==========================================================================
@@ -678,6 +684,11 @@ ABOUT Page STYLES
     width: 50%;
   }
 
+/*News Desktop Styles*/
+  #news .aside-wrapper {
+    justify-content: center;
+    width: 40%;
+  }
 
 /*Ruleset Desktop Styles*/
   #abl-type {
