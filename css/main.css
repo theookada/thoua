@@ -543,12 +543,42 @@ ABOUT Page STYLES
       ========================================================================== */
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+
+  #news {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin:0;
+    padding:0;
+  }
+
+  #news .main-wrapper {
+    width: 50%;
+  }
+
+  #news .main-content .card {
+    flex-basis: 90%;
+  }
+
+  #news .aside-wrapper {
+    align-self: flex-start;
+    width: 50%;
+  }
+
+  #news .aside-content {
+    justify-content: center;
+  }
+
+  #news .aside-content .card {
+    flex-basis: 90%;
+  }
+
 }
 
 /* ==========================================================================
       DESKTOP STYLES - 1200px
       ========================================================================== */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1400px) {
   /* Style adjustments for viewports that meet the condition */
 }
 
