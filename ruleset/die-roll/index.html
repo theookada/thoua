@@ -19,32 +19,37 @@
 
       <header>
         <div class="header-wrapper">
-          <div class="header-content">
 
-          <section class="logo">
-            <img /><p>  logo here </p> <!-- LOGO -->
-          </section>
+          <figure class="logo"><!-- LOGO -->
+            <a href="../../index.html"><img src="../../img/thoualogo.png"/></a>
+          </figure>
 
-          <nav> <!-- TOP Navigation -->
-            <a href="../../index.html"><span>News</span></a><br />
-            <a>Ruleset</a>
+          <nav><!-- TOP Navigation -->
             <ul>
-              <li><a href="../character/index.html">Characters</a></li>
-              <li><a href="../die-roll/index.html">Die Rolls</a></li>
-              <li><a href="../combat/index.html">Combat</a></li>
-              <li><a href="../artifact/index.html">Artifacts</a></li>
-              <li><a href="../abilities/index.html">Abilities</a></li>
+              <li class="dropdown">
+                <a class="dropbtn">Ruleset</a>
+                <div class="dropdown-content">
+                  <a href="../../ruleset/character/index.html">Characters</a>
+                  <a href="../../ruleset/die-roll/index.html">Die Rolls</a>
+                  <a href="../../ruleset/combat/index.html">Combat</a>
+                  <a href="../../ruleset/artifact/index.html">Artifacts</a>
+                  <a href="../../ruleset/abilities/index.html">Abilities</a>
+                </div>
+                </li>
+                <li class="dropdown">
+                  <a class="dropbtn">Elements</a>
+                  <div class="dropdown-content">
+                    <a href="../../element/earth-abil/index.html">Earth</a>
+                    <a href="../../element/fire-abil/index.html">Fire</a>
+                    <a href="../../element/water-abil/index.html">Water</a>
+                    <a href="../../element/wind-abil/index.html">Wind</a>
+                  </div>
+                </li>
+                <li><a href="../../enemy/index.html">Enemies</a></li>
+                <li><a href="../../about/index.html">About</a></li>
             </ul>
-            <a>Ability Library</a>
-            <ul>
-              <li><a href="../../ability-library/earth-abil/index.html">Earth</a></li>
-              <li><a href="../../ability-library/fire-abil/index.html">Fire</a></li>
-              <li><a href="../../ability-library/water-abil/index.html">Water</a></li>
-              <li><a href="../../ability-library/wind-abil/index.html">Wind</a></li>
-            </ul>
-            <a href="../../about/index.html"><span>About</span></a>
           </nav> <!-- END TOP Navigation -->
-          </div> <!-- END header-content -->
+
         </div> <!-- END header-wrapper -->
       </header> <!-- END HEADER -->
 
@@ -52,29 +57,50 @@
           <div class="main-wrapper">
             <section class="main-content">
 
-              <div class="chr-create">
-                <h2>Die Rolls</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+              <div class="card">
+                <div id="die-sum">
+                  <h2>Die Rolls</h2>
+                  <p>Die Rolls are used by Characters to resolve their actions.  Die Rolls in this system are typically opposed and the difference determines the success or failure of the used Ability.  Die Rolls fall under either Attacker Rolls or Defender Rolls.</p>
+                </div>
               </div>
 
-              <div class="chr-stat">
-                <h2>Character Stats</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+              <div class="card">
+                <div id="die-attacker">
+                  <h2>Attacker Rolls</h2>
+                  <p>Attacker Rolls are primarily used when a Character uses an Ability on an Enemy.  Attacker Rolls include Attack and Status Rolls.  Attack Rolls represent physical attacks and add STR.  Status Rolls represent mental attacks and add INT.  Attacker Rolls use the Die or Dice listed in the Ability's entry (Ability Die) and appropriate Attribute to determine the total.</p>
+
+                  <h3>Attack Rolls = Ability Die + STR</h3>
+                  <h3>Status Rolls = Ability Die + INT</h3>
+                </div>
               </div>
 
-              <div class="chr-att">
-                <h2>Attributes</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+              <div class="card">
+                <div id="die-defender">
+                  <h2>Defender Rolls</h2>
+                  <p>Defender Rolls are primarily used when a Character is being targeted by an Enemy’s Ability.  Defender Rolls include Defense and Resistance Rolls.  Defense Rolls represent physical defense and add VIT.  Resistance Rolls represent mental defense and add WIS.  Defender Rolls use the Die or Dice based on the Character’s EM Total (see <a href="../character/index.html#chr-em">Elemental Map</a>) and appropriate Attribute to determine the total.</p>
+
+                  <h3>Defense Rolls = EM Die + VIT</h3>
+                  <h3>Resistance Rolls = EM Die + WIS</h3>
+                </div>
               </div>
 
-              <div class="chr-race">
-                <h2>Races</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+              <div class="card">
+                <div id="die-oppose">
+                  <h2>Opposed Rolls</h2>
+                  <p>As mentioned before the Die Rolls in this system are typically opposed to determine how much damage is done or if an ability is successful.  See the following to determine which Attacker and Defender Rolls are opposed.</p>
+
+                  <h3>Attack Rolls are opposed by Defense Rolls</h3>
+                  <h3>Status Rolls are opposed by Resistance Rolls</h3>
+
+                  <p>For more see <a href="../combat/index.html">Combat</a></p>
+                </div>
               </div>
 
-              <div class="chr-prog">
-                <h2>Character Progression</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+              <div class="card">
+                <div id="die-unoppose">
+                  <h2>Unopposed Rolls</h2>
+                  <p>Certain Abilities may list an Effect that includes a Die Roll without listing the type of Die Roll used.  In these cases, use the Die Roll plus bonus listed in the entry.  Examples of Unopposed Rolls are <em>Heal 1d8+2</em> and <em>At the End of the Character's Turn, Target takes Damage 1d4+1</em></p>
+                </div>
               </div>
 
             </section> <!--END main-content-->
