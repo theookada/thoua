@@ -269,6 +269,7 @@ header .dropdown-content a {
   text-decoration: none;
   display: block;
   text-align: center;
+  font-family: 'Crimson Text', serif;
 }
 
 header .dropdown-content a:hover {
@@ -645,6 +646,39 @@ ABOUT Page STYLES
     padding: 0 10px;
   }
 
+/* Header Desktop Styles */
+  header {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  header nav {
+    justify-content: flex-end;
+    font-size: 1.4em;
+    width: 40%;
+  }
+
+  header nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  header nav ul li {
+    font-size: 1.1em;
+  }
+
+  header .header-wrapper {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+
+  header figure {
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+
 /*Ruleset Desktop Styles*/
   #abl-type {
     width: 100%;
@@ -652,6 +686,11 @@ ABOUT Page STYLES
 
   #abl-target {
     width: 100%;
+  }
+
+/*Elements Desktop Styles*/
+  .lib-card {
+    width: 40%;
   }
 
 }
