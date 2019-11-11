@@ -634,6 +634,26 @@ ABOUT Page STYLES
       ========================================================================== */
 @media only screen and (min-width: 1400px) {
   /* Style adjustments for viewports that meet the condition */
+
+/*General Desktop Styles*/
+  .main-content .card {
+    justify-content: flex-start;
+  }
+
+  .main-content .card h2 {
+    text-align:left;
+    padding: 0 10px;
+  }
+
+/*Ruleset Desktop Styles*/
+  #abl-type {
+    width: 100%;
+  }
+
+  #abl-target {
+    width: 100%;
+  }
+
 }
 
 @media print,
