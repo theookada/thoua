@@ -544,6 +544,7 @@ ABOUT Page STYLES
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
 
+/*News Tablet Styles Start*/
   #news {
     display: flex;
     justify-content: space-between;
@@ -572,7 +573,54 @@ ABOUT Page STYLES
   #news .aside-content .card {
     flex-basis: 90%;
   }
+/*News Tablet Styles End*/
 
+/*General Tablet Styles Start*/
+
+  .main-content .card {
+    flex-basis: 90%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+  .main-content .card h2 {
+    justify-content: center;
+  }
+
+  .main-content .card h3,
+  .main-content .card h4 {
+    line-height: 1em;
+    padding-left: 20px;
+  }
+/*General Tablet Styles End*/
+
+/*Ruleset Tablet Styles Start*/
+  #chr-create h2 {
+    justify-content: center;
+  }
+
+  #chr-create {
+    width: 100%;
+  }
+/*Ruleset Tablet Styles End*/
+
+/*Elements Tablet Styles Start*/
+
+  #lib .lib-head h2 {
+    width:100%;
+  }
+
+  .lib-rank1,
+  .lib-rank2,
+  .lib-rank3 {
+    justify-content: center;
+  }
+
+  .lib-card {
+    max-width: 45%;
+  }
+
+/*Elements Tablet Styles End*/
 }
 
 /* ==========================================================================
