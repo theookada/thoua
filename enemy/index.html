@@ -53,18 +53,298 @@
         </div> <!-- END header-wrapper -->
       </header> <!-- END HEADER -->
 
-        <main>
+        <main class="enemy">
           <div class="main-wrapper">
             <section class="main-content">
 
               <div class="card">
-                <div id="enemy">
+                <div id="enemy-top">
                   <h2>Enemy</h2>
-                  <p>
-                    PLACEHOLDER OF SOME SORT
-                  </p>
+                  <p>Enemies represent the various hostile entities in the world.  Unlike Player Characters that need to be built, Enemies have all of their Stats, Die Rolls and Abilities predetermined.  The Enemy entries can be modified further by the GM to create various challenges for the Players.</p>
                 </div>
               </div>
+
+              <div class="lib-card">
+                <div id="enemy-mercenary">
+                  <h3>Mercenary</h3>
+                  <table>
+                    <tr>
+                      <td>Enemy Level:</td>
+                      <td>2</td>
+                      <td colspan="2">Die Rolls</td>
+                      <td colspan="2">EM Value / EM Dies</td>
+                    </tr>
+                    <tr>
+                      <td>HP:</td>
+                      <td>21</td>
+                      <td>Attack Rolls:</td>
+                      <td>+6</td>
+                      <td>Fire:</td>
+                      <td>7 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>AP:</td>
+                      <td>2</td>
+                      <td>Status Rolls:</td>
+                      <td>+1</td>
+                      <td>Wind:</td>
+                      <td>1 / 1d8</td>
+                    </tr>
+                    <tr>
+                      <td>Movement:</td>
+                      <td>4</td>
+                      <td>Defense Rolls:</td>
+                      <td>+5</td>
+                      <td>Earth:</td>
+                      <td>5 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>Initiative:</td>
+                      <td>+1</td>
+                      <td>Resistance Rolls:</td>
+                      <td>+1</td>
+                      <td>Water:</td>
+                      <td>-1 / 1d8</td>
+                    </tr>
+                  </table>
+
+                  <h3>Blade</h3>
+                  <ul>
+                    <li><b>Element:</b> Fire</li>
+                    <li><b>Type:</b> Damage</li>
+                    <li><b>AP Cost:</b> 1</li>
+                    <li><b>Cooldown:</b> 2</li>
+                    <li><b>Die Roll:</b> Attack</li>
+                    <li><b>Target:</b> Target</li>
+                    <li><b>Range:</b> 1</li>
+                  </ul>
+                  <p><b>Effect:</b> Target takes Earth Damage 1d8.</p>
+
+                  <h3>Weaken</h3>
+                  <ul>
+                    <li><b>Element:</b> Fire</li>
+                    <li><b>Type:</b> Control</li>
+                    <li><b>AP Cost:</b> 1</li>
+                    <li><b>Cooldown:</b> 2</li>
+                    <li><b>Die Roll:</b> Status</li>
+                    <li><b>Target:</b> Burst, Targets</li>
+                    <li><b>Range:</b> 1</li>
+                  </ul>
+                  <p><b>Effect:</b> 1d12, if successful: Targets in Burst take Attack Rolls -1d6 for 3 Turns.</p>
+                </div>
+              </div>
+
+              <div class="lib-card">
+                <div id="enemy-scout">
+                  <h3>Scout</h3>
+                  <table>
+                    <tr>
+                      <td>Enemy Level:</td>
+                      <td>2</td>
+                      <td colspan="2">Die Rolls</td>
+                      <td colspan="2">EM Value / EM Dies</td>
+                    </tr>
+                    <tr>
+                      <td>HP:</td>
+                      <td>19</td>
+                      <td>Attack Rolls:</td>
+                      <td>+3</td>
+                      <td>Fire:</td>
+                      <td>2 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>AP:</td>
+                      <td>2</td>
+                      <td>Status Rolls:</td>
+                      <td>+4</td>
+                      <td>Wind:</td>
+                      <td>5 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>Movement:</td>
+                      <td>4</td>
+                      <td>Defense Rolls:</td>
+                      <td>+2</td>
+                      <td>Earth:</td>
+                      <td>2 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>Initiative:</td>
+                      <td>+4</td>
+                      <td>Resistance Rolls:</td>
+                      <td>+4</td>
+                      <td>Water:</td>
+                      <td>4 / 1d10</td>
+                    </tr>
+                  </table>
+
+                  <h3>Volley</h3>
+                  <ul>
+                    <li><b>Element:</b> Wind</li>
+                    <li><b>Type:</b> Damage</li>
+                    <li><b>AP Cost:</b> 1</li>
+                    <li><b>Cooldown:</b> 2</li>
+                    <li><b>Die Roll:</b> Attack</li>
+                    <li><b>Target:</b> Target</li>
+                    <li><b>Range:</b> 6</li>
+                  </ul>
+                  <p><b>Effect:</b> Target takes Wind Damage 1d6.</p>
+
+                  <h3>Snare</h3>
+                  <ul>
+                    <li><b>Element:</b> Earth</li>
+                    <li><b>Type:</b> Control</li>
+                    <li><b>AP Cost:</b> 1</li>
+                    <li><b>Cooldown:</b> 2</li>
+                    <li><b>Die Roll:</b> Status</li>
+                    <li><b>Target:</b> Target</li>
+                    <li><b>Range:</b> 6</li>
+                  </ul>
+                  <p><b>Effect:</b> 1d10, if successful: Target gains the Snare Condition for 3 Turns.<br />
+                  <em>Snare Condition:</em> At the Start of the Character's Turn, Target takes Damage 1d4 and Movement -2.</p>
+                </div>
+              </div>
+
+              <div class="lib-card">
+                <div id="enemy-mage">
+                  <h3>Mage</h3>
+                  <table>
+                    <tr>
+                      <td>Enemy Level:</td>
+                      <td>3</td>
+                      <td colspan="2">Die Rolls</td>
+                      <td colspan="2">EM Value / EM Dies</td>
+                    </tr>
+                    <tr>
+                      <td>HP:</td>
+                      <td>19</td>
+                      <td>Attack Rolls:</td>
+                      <td>+1</td>
+                      <td>Fire:</td>
+                      <td>1 / 1d8</td>
+                    </tr>
+                    <tr>
+                      <td>AP:</td>
+                      <td>2</td>
+                      <td>Status Rolls:</td>
+                      <td>+7</td>
+                      <td>Wind:</td>
+                      <td>6 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>Movement:</td>
+                      <td>3</td>
+                      <td>Defense Rolls:</td>
+                      <td>+1</td>
+                      <td>Earth:</td>
+                      <td>0 / 1d8</td>
+                    </tr>
+                    <tr>
+                      <td>Initiative:</td>
+                      <td>+5</td>
+                      <td>Resistance Rolls:</td>
+                      <td>+5</td>
+                      <td>Water:</td>
+                      <td>7 / 1d10</td>
+                    </tr>
+                  </table>
+
+                  <h3>Blast</h3>
+                  <ul>
+                    <li><b>Element:</b> Water</li>
+                    <li><b>Type:</b> Damage</li>
+                    <li><b>AP Cost:</b> 1</li>
+                    <li><b>Cooldown:</b> 2</li>
+                    <li><b>Die Roll:</b> Status</li>
+                    <li><b>Target:</b> Splash, Target</li>
+                    <li><b>Range:</b> 4</li>
+                  </ul>
+                  <p><b>Effect:</b> Target and Splash takes Water Damage 1d6.</p>
+
+                  <h3>Aide</h3>
+                  <ul>
+                    <li><b>Element:</b> Water</li>
+                    <li><b>Type:</b> Support</li>
+                    <li><b>AP Cost:</b> 2</li>
+                    <li><b>Cooldown:</b> 2</li>
+                    <li><b>Die Roll:</b> -</li>
+                    <li><b>Target:</b> Target</li>
+                    <li><b>Range:</b> 3</li>
+                  </ul>
+                  <p><b>Effect:</b> Target Heals 1d10</p>
+                </div>
+              </div>
+
+              <div class="lib-card">
+                <div id="enemy-seer">
+                  <h3>Seer</h3>
+                  <table>
+                    <tr>
+                      <td>Enemy Level:</td>
+                      <td>3</td>
+                      <td colspan="2">Die Rolls</td>
+                      <td colspan="2">EM Value / EM Dies</td>
+                    </tr>
+                    <tr>
+                      <td>HP:</td>
+                      <td>22</td>
+                      <td>Attack Rolls:</td>
+                      <td>+4</td>
+                      <td>Fire:</td>
+                      <td>5 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>AP:</td>
+                      <td>2</td>
+                      <td>Status Rolls:</td>
+                      <td>+2</td>
+                      <td>Wind:</td>
+                      <td>1 / 1d8</td>
+                    </tr>
+                    <tr>
+                      <td>Movement:</td>
+                      <td>3</td>
+                      <td>Defense Rolls:</td>
+                      <td>+4</td>
+                      <td>Earth:</td>
+                      <td>4 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>Initiative:</td>
+                      <td>+2</td>
+                      <td>Resistance Rolls:</td>
+                      <td>+2</td>
+                      <td>Water:</td>
+                      <td>2 / 1d10</td>
+                    </tr>
+                  </table>
+
+                  <h3>Enfeeble</h3>
+                  <ul>
+                    <li><b>Element:</b> Water</li>
+                    <li><b>Type:</b> Control</li>
+                    <li><b>AP Cost:</b> 1</li>
+                    <li><b>Cooldown:</b> 2</li>
+                    <li><b>Die Roll:</b> Status</li>
+                    <li><b>Target:</b> Area - 2x2</li>
+                    <li><b>Range:</b> 2</li>
+                  </ul>
+                  <p><b>Effect:</b> 1d10, if successful: Targets in Area take Status Rolls -1d6 for 3 Turns.</p>
+
+                  <h3>Bolt</h3>
+                  <ul>
+                    <li><b>Element:</b> Fire</li>
+                    <li><b>Type:</b> Damage</li>
+                    <li><b>AP Cost:</b> 1</li>
+                    <li><b>Cooldown:</b> 2</li>
+                    <li><b>Die Roll:</b> Attack</li>
+                    <li><b>Target:</b> Target</li>
+                    <li><b>Range:</b> 3</li>
+                  </ul>
+                  <p><b>Effect:</b> Targe takes Fire Damage 1d10.</p>
+                </div>
+              </div>
+
             </section> <!--END main-content-->
           </div> <!--END main-wrapper-->
         </main> <!-- END MAIN -->
