@@ -116,18 +116,21 @@ h1 {
 h2 {
   font-size: 2em;
   font-family: 'Mukta', sans-serif;
+  margin:0;
 }
 
 h3 {
   font-size: 1.4em;
   font-family: 'Crimson Text', serif;
   line-height: 1em;
+  margin:0.3em 0;
 }
 
 h4 {
   font-size: 0.8em;
   font-family: 'Crimson Text', serif;
   line-height: 0.6em;
+  margin:0;
 }
 
 p {
@@ -434,6 +437,7 @@ main #lib {
 
 .lib-card ul {
   padding: 0;
+  padding-left: 0.5em;
 }
 
 .lib-card ul li {
@@ -444,10 +448,18 @@ main #lib {
 
 .lib-card p {
   width: 100%;
+  margin: 0.5em 0;
 }
 
 #lib h2 {
   text-align: center;
+}
+
+.divider-line {
+  background: #393939;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0;
 }
 
 /* ==========================================================================
@@ -643,7 +655,7 @@ ABOUT Page STYLES
 
 /*Enemy Tablet Styles Start*/
   .enemy .lib-card {
-    min-height: 950px;
+    min-height: 800px;
   }
 
 }
@@ -721,7 +733,7 @@ ABOUT Page STYLES
     flex-basis: 30%;
     display: flex;
     justify-content: center;
-    min-height: 850px;
+    height: 900px;
   }
 }
 
