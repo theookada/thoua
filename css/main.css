@@ -116,18 +116,21 @@ h1 {
 h2 {
   font-size: 2em;
   font-family: 'Mukta', sans-serif;
+  margin:0;
 }
 
 h3 {
   font-size: 1.4em;
   font-family: 'Crimson Text', serif;
   line-height: 1em;
+  margin:0.3em 0;
 }
 
 h4 {
   font-size: 0.8em;
   font-family: 'Crimson Text', serif;
   line-height: 0.6em;
+  margin:0;
 }
 
 p {
@@ -150,7 +153,8 @@ ol {
 
 
 /***** TABLE STYLES *****/
-.card table {
+.card table,
+.lib-card table {
   border-collapse: collapse;
   width: 100%;
   font-size: 1.2em;
@@ -158,19 +162,23 @@ ol {
   border: 0.1em solid #3b3b3b;
 }
 
-.card tr {
+.card tr,
+.lib-card tr {
   text-align: left;
   padding: 0.5em;
 }
 
-.card tr:nth-child(odd){background: #d9d9d9;}
+.card tr:nth-child(odd),
+.lib-card tr:nth-child(odd){background: #d9d9d9;}
 
-.card th {
+.card th,
+.lib-card th {
   background: #bababa;
   padding: 0.8em 0.4em;
 }
 
-.card td {padding: 0.2em 0.4em;}
+.card td,
+.lib-card td {padding: 0.2em 0.4em;}
 
 /* ==========================================================================
 HEADER STYLES
@@ -328,7 +336,8 @@ main {
 }
 
 .main-content .card ol,
-.main-content .card ul {
+.main-content .card ul,
+.main-content .lib-card ul {
   margin: 0;
   padding-left: 0.5em;
 }
@@ -421,13 +430,14 @@ main #lib {
 }
 
 .lib-card h3 {
-  width: 90%;
+  width: 100%;
   display:flex;
   justify-content: center;
 }
 
 .lib-card ul {
   padding: 0;
+  padding-left: 0.5em;
 }
 
 .lib-card ul li {
@@ -438,10 +448,18 @@ main #lib {
 
 .lib-card p {
   width: 100%;
+  margin: 0.5em 0;
 }
 
 #lib h2 {
   text-align: center;
+}
+
+.divider-line {
+  background: #393939;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0;
 }
 
 /* ==========================================================================
@@ -634,6 +652,12 @@ ABOUT Page STYLES
   }
 
 /*Elements Tablet Styles End*/
+
+/*Enemy Tablet Styles Start*/
+  .enemy .lib-card {
+    min-height: 800px;
+  }
+
 }
 
 /* ==========================================================================
@@ -704,6 +728,13 @@ ABOUT Page STYLES
     width: 40%;
   }
 
+/*Enemy Desktop Styles Start*/
+  .enemy .lib-card {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    height: 900px;
+  }
 }
 
 @media print,
