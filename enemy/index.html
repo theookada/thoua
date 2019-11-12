@@ -345,28 +345,97 @@
               </div>
 
               <div class="lib-card">
-                <div id="enemy-seer">
-                  <h3>Seer</h3>
+                <div id="enemy-wolf">
+                  <h3>Wolf</h3>
                   <table>
                     <tr>
                       <td>Enemy Level:</td>
-                      <td>3</td>
+                      <td>2</td>
                       <td colspan="2">Die Rolls</td>
                       <td colspan="2">EM Value / EM Dies</td>
                     </tr>
                     <tr>
                       <td>HP:</td>
-                      <td>22</td>
+                      <td>23</td>
                       <td>Attack Rolls:</td>
-                      <td>+4</td>
+                      <td>+6</td>
                       <td>Fire:</td>
-                      <td>5 / 1d10</td>
+                      <td>8 / 1d10</td>
                     </tr>
                     <tr>
                       <td>AP:</td>
                       <td>2</td>
                       <td>Status Rolls:</td>
-                      <td>+2</td>
+                      <td>+1</td>
+                      <td>Wind:</td>
+                      <td>1 / 1d8</td>
+                    </tr>
+                    <tr>
+                      <td>Movement:</td>
+                      <td>5</td>
+                      <td>Defense Rolls:</td>
+                      <td>+3</td>
+                      <td>Earth:</td>
+                      <td>3 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>Initiative:</td>
+                      <td>+3</td>
+                      <td>Resistance Rolls:</td>
+                      <td>+1</td>
+                      <td>Water:</td>
+                      <td>1 / 1d10</td>
+                    </tr>
+                  </table>
+                  <h3>Rip</h3>
+                  <ul>
+                    <li><b>Element:</b> Fire</li>
+                    <li><b>Type:</b> Damage</li>
+                    <li><b>AP Cost:</b> 1</li>
+                    <li><b>Cooldown:</b> 1</li>
+                    <li><b>Die Roll:</b> Attack</li>
+                    <li><b>Target:</b> Target</li>
+                    <li><b>Range:</b> 1</li>
+                  </ul>
+                  <p><b>Effect:</b> Target takes Fire Damage 1d8.</p>
+                  <div class="divider-line"></div>
+                  <h3>Pack Hunt</h3>
+                  <ul>
+                    <li><b>Element:</b> Fire</li>
+                    <li><b>Type:</b> Passive</li>
+                    <li><b>AP Cost:</b> -</li>
+                    <li><b>Cooldown:</b> -</li>
+                    <li><b>Die Roll:</b> -</li>
+                    <li><b>Target:</b> Self</li>
+                    <li><b>Range:</b> -</li>
+                  </ul>
+                  <p><b>Effect:</b> When Self is 1 Space away from an Ally, Self gains Attack Rolls +3.</p>
+                </div>
+              </div>
+
+              <div class="lib-card">
+                <div id="enemy-bear">
+                  <h3>Bear</h3>
+                  <table>
+                    <tr>
+                      <td>Enemy Level:</td>
+                      <td>5</td>
+                      <td colspan="2">Die Rolls</td>
+                      <td colspan="2">EM Value / EM Dies</td>
+                    </tr>
+                    <tr>
+                      <td>HP:</td>
+                      <td>55</td>
+                      <td>Attack Rolls:</td>
+                      <td>+5</td>
+                      <td>Fire:</td>
+                      <td>2 / 1d10</td>
+                    </tr>
+                    <tr>
+                      <td>AP:</td>
+                      <td>2</td>
+                      <td>Status Rolls:</td>
+                      <td>+1</td>
                       <td>Wind:</td>
                       <td>1 / 1d8</td>
                     </tr>
@@ -374,42 +443,42 @@
                       <td>Movement:</td>
                       <td>3</td>
                       <td>Defense Rolls:</td>
-                      <td>+4</td>
+                      <td>+7</td>
                       <td>Earth:</td>
-                      <td>4 / 1d10</td>
+                      <td>13 / 1d12</td>
                     </tr>
                     <tr>
                       <td>Initiative:</td>
-                      <td>+2</td>
+                      <td>+1</td>
                       <td>Resistance Rolls:</td>
                       <td>+2</td>
                       <td>Water:</td>
-                      <td>2 / 1d10</td>
+                      <td>7 / 1d10</td>
                     </tr>
                   </table>
-                  <h3>Enfeeble</h3>
+                  <h3>Maul</h3>
                   <ul>
-                    <li><b>Element:</b> Water</li>
-                    <li><b>Type:</b> Control</li>
-                    <li><b>AP Cost:</b> 1</li>
-                    <li><b>Cooldown:</b> 2</li>
-                    <li><b>Die Roll:</b> Status</li>
-                    <li><b>Target:</b> Area - 2x2</li>
-                    <li><b>Range:</b> 2</li>
-                  </ul>
-                  <p><b>Effect:</b> 1d10, if successful: Targets in Area take Status Rolls -1d6 for 3 Turns.</p>
-                  <div class="divider-line"></div>
-                  <h3>Bolt</h3>
-                  <ul>
-                    <li><b>Element:</b> Fire</li>
+                    <li><b>Element:</b> Earth</li>
                     <li><b>Type:</b> Damage</li>
                     <li><b>AP Cost:</b> 1</li>
-                    <li><b>Cooldown:</b> 2</li>
+                    <li><b>Cooldown:</b> 1</li>
                     <li><b>Die Roll:</b> Attack</li>
                     <li><b>Target:</b> Target</li>
-                    <li><b>Range:</b> 3</li>
+                    <li><b>Range:</b> 1</li>
                   </ul>
-                  <p><b>Effect:</b> Targe takes Fire Damage 1d10.</p>
+                  <p><b>Effect:</b> Target takes Earth Damage 2d6.</p>
+                  <div class="divider-line"></div>
+                  <h3>Tough Hide</h3>
+                  <ul>
+                    <li><b>Element:</b> Earth</li>
+                    <li><b>Type:</b> Passive</li>
+                    <li><b>AP Cost:</b> -</li>
+                    <li><b>Cooldown:</b> -</li>
+                    <li><b>Die Roll:</b> -</li>
+                    <li><b>Target:</b> Self</li>
+                    <li><b>Range:</b> -</li>
+                  </ul>
+                  <p><b>Effect:</b> Self gains Earth EM +5 and Water EM +5.</p>
                 </div>
               </div>
 
