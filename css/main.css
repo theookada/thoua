@@ -658,6 +658,10 @@ ABOUT Page STYLES
     min-height: 800px;
   }
 
+  .enemy .main-content {
+    align-items: flex-start;
+  }
+
 }
 
 /* ==========================================================================
@@ -733,7 +737,12 @@ ABOUT Page STYLES
     flex-basis: 30%;
     display: flex;
     justify-content: center;
-    height: 900px;
+    min-height: auto;
+    height: auto;
+  }
+
+  .enemy .main-content {
+    align-items: flex-start;
   }
 }
 
